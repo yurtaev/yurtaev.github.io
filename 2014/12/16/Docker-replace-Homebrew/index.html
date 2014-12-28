@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Docker как замена Homebrew | @yurtaev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="Egor Yurtaev, Егор Юртаев, python, javascript, django">
+  <meta name="description" content="Проблема
+После обновления на OS X Yosemite мне захотелось избавится от зависимости homebrew, не от homebrew как такового, а от установки при помощи него всяких mysql, postgres, redis и т.д. На самом д">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker как замена Homebrew">
+<meta property="og:url" content="http://yurtaev.link/2014/12/16/Docker-replace-Homebrew/">
+<meta property="og:site_name" content="@yurtaev">
+<meta property="og:description" content="Проблема
+После обновления на OS X Yosemite мне захотелось избавится от зависимости homebrew, не от homebrew как такового, а от установки при помощи него всяких mysql, postgres, redis и т.д. На самом д">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Docker как замена Homebrew">
+<meta name="twitter:description" content="Проблема
+После обновления на OS X Yosemite мне захотелось избавится от зависимости homebrew, не от homebrew как такового, а от установки при помощи него всяких mysql, postgres, redis и т.д. На самом д">
+<meta name="twitter:creator" content="@yurtaev">
+<link rel="publisher" href="https://www.google.com/+EgorYurtaev">
+
+  
+    <link rel="alternative" href="/atom.xml" title="@yurtaev" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <!-- <a href="/" id="logo">@yurtaev</a> -->
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Root</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://yurtaev.link"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Docker-replace-Homebrew" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/16/Docker-replace-Homebrew/" class="article-date">
+  <time datetime="2014-12-15T18:00:00.000Z" itemprop="datePublished">16 декабря 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/dev/">dev</a>►<a class="article-category-link" href="/categories/dev/docker/">docker</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Docker как замена Homebrew
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Проблема">Проблема</h2>
+<p>После обновления на OS X Yosemite мне захотелось избавится от зависимости homebrew, не от homebrew как такового, а от установки при помощи него всяких mysql, postgres, redis и т.д. На самом деле из-за homebrew уже давно не накатываю обновления поверх старой системы, а делаю полностью новою установку с форматированием диска. Для этого есть несколько причин:</p>
+<ul>
+<li>Начинать с чистого листа всегда хорошо и можно избавится от кучи мусора что накопилось за предыдущий цикл жизни мажорной версии ОС</li>
+<li>Обновления в моем случае никогда не накатываются гладко, не поломав при этот половину критичных вещей</li>
+</ul>
+<p>Чаще всего у меня ломаются серверные пакеты из homebrew (о ужас когда-то это был macports), и после обновления в 90% случаев сервер mysql оказывается в положение кота шредингера, он вроде есть, и в тоже время его нет. Ситуацию еще усугубляет python, наверное каждый python разработчик сталкивался с болью установки <code>mysql-python</code> под Mac OS (слава богам что для меня эти времена прошли).</p>
+<p>Так вот, после обновления на Yosemite было решено попробовать docker для поднятия всех этих серверных «штук». Как поднимать docker под Mac OS подробно расписано в <a href="https://docs.docker.com/installation/mac/" target="_blank" rel="external">документации</a>, я лишь скажу что использовать docker в сыром виде для этих целей не лучший вариант.</p>
+<a id="more"></a>
+
+<h2 id="Решение">Решение</h2>
+<p>И тут на помощь приходит <a href="http://www.fig.sh/" target="_blank" rel="external">Fig</a> который идеально прижился у меня. Всё что необходимо, это описать конфиг:</p>
+<figure class="highlight yaml"><figcaption><span>fig.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">redis:</div><div class="line">    image: redis</div><div class="line">    ports:</div><div class="line">        -<span class="ruby"> <span class="string">"6379:6379"</span></span></div><div class="line">postgres:</div><div class="line">    image: postgres</div><div class="line">    ports:</div><div class="line">        -<span class="ruby"> <span class="string">"5432:5432"</span></span></div><div class="line">couchdb:</div><div class="line">    image: "klaemo/couchdb"</div><div class="line">    ports:</div><div class="line">        -<span class="ruby"> <span class="string">"5984:5984"</span></span></div></pre></td></tr></table></figure>
+
+<p>И дальше манипулировать контейнерами как угодно:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$ fig up redis</div><div class="line"><span class="comment"># или запустить в фоне</span></div><div class="line">$ fig up <span class="operator">-d</span> redis</div><div class="line"><span class="comment"># или запустить всё в фоне</span></div><div class="line">$ fig up <span class="operator">-d</span></div><div class="line">$ fig ps</div><div class="line"></div><div class="line">Name                     Command               State            Ports</div><div class="line">-----------------------------------------------------------------------------</div><div class="line">couchdb_1    /entrypoint.sh couchdb           Exit <span class="number">0</span>   <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">5984</span>-&gt;<span class="number">5984</span>/tcp</div><div class="line">postgres_1   /docker-entrypoint.sh postgres   Exit <span class="number">0</span>   <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">5432</span>-&gt;<span class="number">5432</span>/tcp</div><div class="line">redis_1      /entrypoint.sh redis-server      Up       <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">6379</span>-&gt;<span class="number">6379</span>/tcp</div></pre></td></tr></table></figure>
+
+<p><code>Fig</code> достаточно гибкий в настройке. Можно например указать какие папки примаунтить в контейнер (для Mac OS <code>fig &gt;= 1.0.0</code>), полезно для БД, или указать что контейнеру нужен <code>privileged mode</code>, или поставить лимит на RAM, и т.п что можно указать напрямую для docker, только в удобном для редактирования yaml файле.</p>
+<p>Единственная проблема которую решил не полностью, это отсутствие в хосте установленных клиентов типа <code>redis-cli</code> или <code>psql</code>, но обычно «хорошие» образы <a href="https://github.com/docker-library/docs/tree/master/redis#-or-via-redis-cli" target="_blank" rel="external">позволяют</a> решить и это. Например для редиса я сделал себе alias:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ alias redis-cli=<span class="string">"docker run -it --link yurtaev_redis_1:redis --rm redis sh -c</span></div><div class="line">&gt; 'exec redis-cli -h</div><div class="line">&gt; \"\$REDIS_PORT_6379_TCP_ADDR\" -p \"\$REDIS_PORT_6379_TCP_PORT\"'"</div><div class="line">$ redis-cli</div><div class="line"><span class="number">172.17</span>.<span class="number">0.12</span>:<span class="number">6379</span>&gt; SET qwerty <span class="number">213</span></div></pre></td></tr></table></figure>
+
+<p>А еще можно так:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ alias f=<span class="string">"fig -f <span class="variable">$HOME</span>/fig.yml"</span></div><div class="line">$ f stop</div></pre></td></tr></table></figure>
+
+<p>и из любого места управлять контейнерами</p>
+<h2 id="Итого">Итого</h2>
+<h3 id="Плюсы">Плюсы</h3>
+<ul>
+<li>Решена проблема при накатывание обновления ОС</li>
+<li>Можно поднимать то чего нет или очень старое в homebrew</li>
+<li>Очень просто поднять несколько различных версий одного и того же сервера, полезно при тестирование на этапе разработки</li>
+</ul>
+<h3 id="Минусы">Минусы</h3>
+<ul>
+<li>Нужно не забывать стартовать при включение машины boot2docker и fig, но кто-то еще выключает компьютеры?!</li>
+<li>Требуется держать в фоне запущенный virtualbox который жрет ресурсы. Рекомендую уменьшить количество RAM и ядер для boot2docker</li>
+<li>Для доступа к сервисам которые крутятся в docker нужно указывать ip адрес виртуальной машины (никакого localhost по умолчанию теперь). Я просто добавил в <code>/etc/hosts</code> отдельный хост который всегда указывает на <code>boot2docker ip</code></li>
+<li>Docker очень любит кушать место на жестком диске</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yurtaev.link/2014/12/16/Docker-replace-Homebrew/" data-id="pbytwpdm59idq8nr" data-title="Docker как замена Homebrew" class="article-share-link">Share</a>
+      
+        <a href="http://yurtaev.link/2014/12/16/Docker-replace-Homebrew/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker-головного-мозга/">docker головного мозга</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fig/">fig</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/homebrew/">homebrew</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mac-os/">mac os</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/12/28/Linkstash-52/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Будущее&nbsp;→</strong>
+      <div class="article-nav-title">
+        
+          Linkstash #52
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/12/15/docker-death-parallels/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">←&nbsp;Прошлое</strong>
+      <div class="article-nav-title">Parallels где ты был последние 10-ть лет?</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/dev/">dev</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/dev/docker/">docker</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/linkstash/">linkstash</a><span class="category-list-count">8</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/analysis/" style="font-size: 10.00px;">analysis</a><a href="/tags/angular/" style="font-size: 10.00px;">angular</a><a href="/tags/angularjs/" style="font-size: 16.00px;">angularjs</a><a href="/tags/anti/" style="font-size: 10.00px;">anti</a><a href="/tags/api/" style="font-size: 10.00px;">api</a><a href="/tags/armin/" style="font-size: 10.00px;">armin</a><a href="/tags/automation/" style="font-size: 10.00px;">automation</a><a href="/tags/aws/" style="font-size: 10.00px;">aws</a><a href="/tags/beanstalk/" style="font-size: 10.00px;">beanstalk</a><a href="/tags/bem/" style="font-size: 10.00px;">bem</a><a href="/tags/benchmark/" style="font-size: 10.00px;">benchmark</a><a href="/tags/best/" style="font-size: 10.00px;">best</a><a href="/tags/bigdata/" style="font-size: 10.00px;">bigdata</a><a href="/tags/blabla/" style="font-size: 12.00px;">blabla</a><a href="/tags/blocker/" style="font-size: 10.00px;">blocker</a><a href="/tags/bookmarks/" style="font-size: 10.00px;">bookmarks</a><a href="/tags/browser/" style="font-size: 10.00px;">browser</a><a href="/tags/browserify/" style="font-size: 10.00px;">browserify</a><a href="/tags/cbv/" style="font-size: 10.00px;">cbv</a><a href="/tags/clojure/" style="font-size: 10.00px;">clojure</a><a href="/tags/clojurescript/" style="font-size: 10.00px;">clojurescript</a><a href="/tags/containers/" style="font-size: 10.00px;">containers</a><a href="/tags/cron/" style="font-size: 10.00px;">cron</a><a href="/tags/cryptography/" style="font-size: 10.00px;">cryptography</a><a href="/tags/css/" style="font-size: 16.00px;">css</a><a href="/tags/deploy/" style="font-size: 10.00px;">deploy</a><a href="/tags/deployment/" style="font-size: 10.00px;">deployment</a><a href="/tags/development/" style="font-size: 10.00px;">development</a><a href="/tags/di/" style="font-size: 12.00px;">di</a><a href="/tags/django/" style="font-size: 18.00px;">django</a><a href="/tags/docker/" style="font-size: 20.00px;">docker</a><a href="/tags/docker-головного-мозга/" style="font-size: 12.00px;">docker головного мозга</a><a href="/tags/docpad/" style="font-size: 10.00px;">docpad</a><a href="/tags/elixir/" style="font-size: 10.00px;">elixir</a><a href="/tags/else/" style="font-size: 10.00px;">else</a><a href="/tags/environments/" style="font-size: 10.00px;">environments</a><a href="/tags/erlang/" style="font-size: 14.00px;">erlang</a><a href="/tags/es6/" style="font-size: 16.00px;">es6</a><a href="/tags/evan/" style="font-size: 12.00px;">evan</a><a href="/tags/extension/" style="font-size: 10.00px;">extension</a>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2014 Egor Yurtaev<br>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Root</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'yurtaev';
+  
+  var disqus_url = 'http://yurtaev.link/2014/12/16/Docker-replace-Homebrew/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" type="text/css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+  </div>
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-57420841-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+  (w[c] = w[c] || []).push(function() {
+    try {
+      w.yaCounter27397448 = new Ya.Metrika({
+        id:27397448,
+        webvisor:true
+      });
+    } catch(e) { }
+  });
+
+  var n = d.getElementsByTagName("script")[0],
+  s = d.createElement("script"),
+  f = function () { n.parentNode.insertBefore(s, n); };
+  s.type = "text/javascript";
+  s.async = true;
+  s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+  if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+  } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="//mc.yandex.ru/watch/27397448" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+
+</body>
+</html>

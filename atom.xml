@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[@yurtaev]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yurtaev.link/"/>
+  <updated>2014-12-28T10:34:20.639Z</updated>
+  <id>http://yurtaev.link/</id>
+  
+  <author>
+    <name><![CDATA[Egor Yurtaev]]></name>
+    <email><![CDATA[yurtaev.egor+blog@gmail.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Linkstash #52]]></title>
+    <link href="http://yurtaev.link/2014/12/28/Linkstash-52/"/>
+    <id>http://yurtaev.link/2014/12/28/Linkstash-52/</id>
+    <published>2014-12-28T10:32:39.000Z</published>
+    <updated>2014-12-28T10:33:05.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Глобальная карта ветров. С учетом того что я <del>дочитываю</del> дочитал <a href="http://goo.gl/QCKHDL" target="_blank" rel="external">«На берегу»</a> очень интересно<ul>
+<li><a href="http://earth.nullschool.net/" target="_blank" rel="external">http://earth.nullschool.net/</a></li>
+<li><a href="https://www.windyty.com/" target="_blank" rel="external">https://www.windyty.com/</a></li>
+</ul>
+</li>
+<li><a href="http://kelly-mclaughlin.com/blog/2014/12/12/building-an-erlang-project-with-mix/" target="_blank" rel="external">Building an Erlang Project With Mix</a> – mix хорош #erlang #elixir #rebar #mix</li>
+<li><a href="http://cssstats.com/" target="_blank" rel="external">Сервис который выдает статистику по css на сайте – количество селекторов, цветов, размеров и т.д</a> #css #tool #statistics #frontend</li>
+<li><a href="http://www.evanmiller.org/start-ups-and-emotional-debt.html" target="_blank" rel="external">Бро Evan Miller прорвало на серию прекрасных статей. Теперь про «Эмоциональный долг»</a> #thinking #Evan</li>
+<li><a href="http://benanne.github.io/2014/08/05/spotify-cnns.html" target="_blank" rel="external">Запоздалая но очень крутая статья о том как spotify строит рекомендации</a>. Spotify это единственный сервис которым я пользуюсь больше полугода и он не скатывается в унылые повторы как пандора или ластфм + подборки плейлистов просто то что мне надо. #spotify #bigdata #analysis #recommendations</li>
+<li><a href="http://blog.plataformatec.com.br/2014/12/the-pros-and-cons-of-4-deployment-process-techniques/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+PlataformaBlog+%28Plataformatec+Blog%29&amp;utm_content=FeedBurner" target="_blank" rel="external">Из бложика plataformatec «The pros and cons of 4 deployment process techniques»</a> #deployment</li>
+<li><a href="http://www.phoenixframework.org/v0.7.2/docs/overview" target="_blank" rel="external">phoenix наконец-то запилил сайт под проект и маленький туториал. Но я всё еще хочу django а не рельсы на elixir :’(</a> #elixir #guides</li>
+<li><a href="https://github.com/gorhill/uBlock" target="_blank" rel="external">Более быстрая и легкая альтернатива для AdBlock, эффект плацебо, но мне на глаз кажется лучше</a> #extension #blocker #fast</li>
+<li><a href="https://medium.com/@addyosmani/javascript-application-architecture-on-the-road-to-2015-d8125811101b" target="_blank" rel="external">Эдди Османи размышляет на тему фронтенда в 2015 г.</a> #frontend #thinking</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li>Глобальная карта ветров. С учетом того что я <del>дочитываю</del> дочитал <a href="http://goo.gl/QCKHDL" target="_blank" rel="exter]]>
+    </summary>
+    
+      <category term="spotify" scheme="http://yurtaev.link/tags/spotify/"/>
+    
+      <category term="statistics" scheme="http://yurtaev.link/tags/statistics/"/>
+    
+      <category term="frontend" scheme="http://yurtaev.link/tags/frontend/"/>
+    
+      <category term="extension" scheme="http://yurtaev.link/tags/extension/"/>
+    
+      <category term="rebar" scheme="http://yurtaev.link/tags/rebar/"/>
+    
+      <category term="thinking" scheme="http://yurtaev.link/tags/thinking/"/>
+    
+      <category term="blocker" scheme="http://yurtaev.link/tags/blocker/"/>
+    
+      <category term="tool" scheme="http://yurtaev.link/tags/tool/"/>
+    
+      <category term="recommendations" scheme="http://yurtaev.link/tags/recommendations/"/>
+    
+      <category term="deployment" scheme="http://yurtaev.link/tags/deployment/"/>
+    
+      <category term="bigdata" scheme="http://yurtaev.link/tags/bigdata/"/>
+    
+      <category term="analysis" scheme="http://yurtaev.link/tags/analysis/"/>
+    
+      <category term="mix" scheme="http://yurtaev.link/tags/mix/"/>
+    
+      <category term="evan" scheme="http://yurtaev.link/tags/evan/"/>
+    
+      <category term="fast" scheme="http://yurtaev.link/tags/fast/"/>
+    
+      <category term="elixir" scheme="http://yurtaev.link/tags/elixir/"/>
+    
+      <category term="erlang" scheme="http://yurtaev.link/tags/erlang/"/>
+    
+      <category term="guides" scheme="http://yurtaev.link/tags/guides/"/>
+    
+      <category term="css" scheme="http://yurtaev.link/tags/css/"/>
+    
+      <category term="linkstash" scheme="http://yurtaev.link/categories/linkstash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Docker как замена Homebrew]]></title>
+    <link href="http://yurtaev.link/2014/12/16/Docker-replace-Homebrew/"/>
+    <id>http://yurtaev.link/2014/12/16/Docker-replace-Homebrew/</id>
+    <published>2014-12-15T18:00:00.000Z</published>
+    <updated>2014-12-15T16:38:35.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Проблема">Проблема</h2>
+<p>После обновления на OS X Yosemite мне захотелось избавится от зависимости homebrew, не от homebrew как такового, а от установки при помощи него всяких mysql, postgres, redis и т.д. На самом деле из-за homebrew уже давно не накатываю обновления поверх старой системы, а делаю полностью новою установку с форматированием диска. Для этого есть несколько причин:</p>
+<ul>
+<li>Начинать с чистого листа всегда хорошо и можно избавится от кучи мусора что накопилось за предыдущий цикл жизни мажорной версии ОС</li>
+<li>Обновления в моем случае никогда не накатываются гладко, не поломав при этот половину критичных вещей</li>
+</ul>
+<p>Чаще всего у меня ломаются серверные пакеты из homebrew (о ужас когда-то это был macports), и после обновления в 90% случаев сервер mysql оказывается в положение кота шредингера, он вроде есть, и в тоже время его нет. Ситуацию еще усугубляет python, наверное каждый python разработчик сталкивался с болью установки <code>mysql-python</code> под Mac OS (слава богам что для меня эти времена прошли).</p>
+<p>Так вот, после обновления на Yosemite было решено попробовать docker для поднятия всех этих серверных «штук». Как поднимать docker под Mac OS подробно расписано в <a href="https://docs.docker.com/installation/mac/" target="_blank" rel="external">документации</a>, я лишь скажу что использовать docker в сыром виде для этих целей не лучший вариант.</p>
+<a id="more"></a>
+
+<h2 id="Решение">Решение</h2>
+<p>И тут на помощь приходит <a href="http://www.fig.sh/" target="_blank" rel="external">Fig</a> который идеально прижился у меня. Всё что необходимо, это описать конфиг:</p>
+<figure class="highlight yaml"><figcaption><span>fig.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">redis:</div><div class="line">    image: redis</div><div class="line">    ports:</div><div class="line">        -<span class="ruby"> <span class="string">"6379:6379"</span></span></div><div class="line">postgres:</div><div class="line">    image: postgres</div><div class="line">    ports:</div><div class="line">        -<span class="ruby"> <span class="string">"5432:5432"</span></span></div><div class="line">couchdb:</div><div class="line">    image: "klaemo/couchdb"</div><div class="line">    ports:</div><div class="line">        -<span class="ruby"> <span class="string">"5984:5984"</span></span></div></pre></td></tr></table></figure>
+
+<p>И дальше манипулировать контейнерами как угодно:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$ fig up redis</div><div class="line"><span class="comment"># или запустить в фоне</span></div><div class="line">$ fig up <span class="operator">-d</span> redis</div><div class="line"><span class="comment"># или запустить всё в фоне</span></div><div class="line">$ fig up <span class="operator">-d</span></div><div class="line">$ fig ps</div><div class="line"></div><div class="line">Name                     Command               State            Ports</div><div class="line">-----------------------------------------------------------------------------</div><div class="line">couchdb_1    /entrypoint.sh couchdb           Exit <span class="number">0</span>   <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">5984</span>-&gt;<span class="number">5984</span>/tcp</div><div class="line">postgres_1   /docker-entrypoint.sh postgres   Exit <span class="number">0</span>   <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">5432</span>-&gt;<span class="number">5432</span>/tcp</div><div class="line">redis_1      /entrypoint.sh redis-server      Up       <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">6379</span>-&gt;<span class="number">6379</span>/tcp</div></pre></td></tr></table></figure>
+
+<p><code>Fig</code> достаточно гибкий в настройке. Можно например указать какие папки примаунтить в контейнер (для Mac OS <code>fig &gt;= 1.0.0</code>), полезно для БД, или указать что контейнеру нужен <code>privileged mode</code>, или поставить лимит на RAM, и т.п что можно указать напрямую для docker, только в удобном для редактирования yaml файле.</p>
+<p>Единственная проблема которую решил не полностью, это отсутствие в хосте установленных клиентов типа <code>redis-cli</code> или <code>psql</code>, но обычно «хорошие» образы <a href="https://github.com/docker-library/docs/tree/master/redis#-or-via-redis-cli" target="_blank" rel="external">позволяют</a> решить и это. Например для редиса я сделал себе alias:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ alias redis-cli=<span class="string">"docker run -it --link yurtaev_redis_1:redis --rm redis sh -c</span></div><div class="line">&gt; 'exec redis-cli -h</div><div class="line">&gt; \"\$REDIS_PORT_6379_TCP_ADDR\" -p \"\$REDIS_PORT_6379_TCP_PORT\"'"</div><div class="line">$ redis-cli</div><div class="line"><span class="number">172.17</span>.<span class="number">0.12</span>:<span class="number">6379</span>&gt; SET qwerty <span class="number">213</span></div></pre></td></tr></table></figure>
+
+<p>А еще можно так:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ alias f=<span class="string">"fig -f <span class="variable">$HOME</span>/fig.yml"</span></div><div class="line">$ f stop</div></pre></td></tr></table></figure>
+
+<p>и из любого места управлять контейнерами</p>
+<h2 id="Итого">Итого</h2>
+<h3 id="Плюсы">Плюсы</h3>
+<ul>
+<li>Решена проблема при накатывание обновления ОС</li>
+<li>Можно поднимать то чего нет или очень старое в homebrew</li>
+<li>Очень просто поднять несколько различных версий одного и того же сервера, полезно при тестирование на этапе разработки</li>
+</ul>
+<h3 id="Минусы">Минусы</h3>
+<ul>
+<li>Нужно не забывать стартовать при включение машины boot2docker и fig, но кто-то еще выключает компьютеры?!</li>
+<li>Требуется держать в фоне запущенный virtualbox который жрет ресурсы. Рекомендую уменьшить количество RAM и ядер для boot2docker</li>
+<li>Для доступа к сервисам которые крутятся в docker нужно указывать ip адрес виртуальной машины (никакого localhost по умолчанию теперь). Я просто добавил в <code>/etc/hosts</code> отдельный хост который всегда указывает на <code>boot2docker ip</code></li>
+<li>Docker очень любит кушать место на жестком диске</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Проблема">Проблема</h2>
+<p>После обновления на OS X Yosemite мне захотелось избавится от зависимости homebrew, не от homebrew как такового, а от установки при помощи него всяких mysql, postgres, redis и т.д. На самом деле из-за homebrew уже давно не накатываю обновления поверх старой системы, а делаю полностью новою установку с форматированием диска. Для этого есть несколько причин:</p>
+<ul>
+<li>Начинать с чистого листа всегда хорошо и можно избавится от кучи мусора что накопилось за предыдущий цикл жизни мажорной версии ОС</li>
+<li>Обновления в моем случае никогда не накатываются гладко, не поломав при этот половину критичных вещей</li>
+</ul>
+<p>Чаще всего у меня ломаются серверные пакеты из homebrew (о ужас когда-то это был macports), и после обновления в 90% случаев сервер mysql оказывается в положение кота шредингера, он вроде есть, и в тоже время его нет. Ситуацию еще усугубляет python, наверное каждый python разработчик сталкивался с болью установки <code>mysql-python</code> под Mac OS (слава богам что для меня эти времена прошли).</p>
+<p>Так вот, после обновления на Yosemite было решено попробовать docker для поднятия всех этих серверных «штук». Как поднимать docker под Mac OS подробно расписано в <a href="https://docs.docker.com/installation/mac/" target="_blank" rel="external">документации</a>, я лишь скажу что использовать docker в сыром виде для этих целей не лучший вариант.</p>
+]]>
+    
+    </summary>
+    
+      <category term="docker" scheme="http://yurtaev.link/tags/docker/"/>
+    
+      <category term="homebrew" scheme="http://yurtaev.link/tags/homebrew/"/>
+    
+      <category term="fig" scheme="http://yurtaev.link/tags/fig/"/>
+    
+      <category term="mac os" scheme="http://yurtaev.link/tags/mac-os/"/>
+    
+      <category term="docker головного мозга" scheme="http://yurtaev.link/tags/docker-%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BC%D0%BE%D0%B7%D0%B3%D0%B0/"/>
+    
+      <category term="dev" scheme="http://yurtaev.link/categories/dev/"/>
+    
+      <category term="docker" scheme="http://yurtaev.link/categories/dev/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Parallels где ты был последние 10-ть лет?]]></title>
+    <link href="http://yurtaev.link/2014/12/15/docker-death-parallels/"/>
+    <id>http://yurtaev.link/2014/12/15/docker-death-parallels/</id>
+    <published>2014-12-14T18:22:02.000Z</published>
+    <updated>2014-12-23T14:35:56.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/docker-100388953-orig.jpg" alt="docker - death to vmware, hyper-v and virtualbox"></p>
+<p><em>Хотел написать 140 слов о <a href="https://www.yahoo.com/tech/s/parallels-adopts-docker-next-cloud-220003984.html" target="_blank" rel="external">Parallels adopts Docker in next Cloud Server release</a>, но меня как то понесло…</em></p>
+<p>Я представляю как parallels кусает себе локти. Я нисколько не уменьшаю их заслуги в разработке тулов вокруг виртуализации, они очень много вложили в опенсоурс, но кто из обычных смертных за последние 10-ть лет хоть что-то пробовал запустить от parallels (кроме решения для домохозяек)? Или хотя бы задумывался над тем что продукты parallels могут решить какую-то повседневную проблему?</p>
+<p>Docker поэтому и стрельнул т.к любой слабоумный может взять, один раз завернуть свое приложение и запускать его на серверах без боли. А деплой любого приложения это боль, и я всегда смеюсь когда кто-то говорит – «осталось совсем немного, только задеплоть за 15 минут», т.к сам был тем кто это говорил.</p>
+<a id="more"></a>
+
+<p>Во-первых надо менять процесс разработки, и с первого коммита должен быть непрерывный процесс объединенный с деплоем, если не на dev сервер, то как минимум в бокс vagrant. Это избавит в будущем от проблем когда в последний момент всплывает зависимость типа <code>libjpeg-dev</code> про которую забыли т.к её поставили один раз руками и всё. Плюс когда деплой интегрирован в разработку и происходит постоянно, так или иначе большинство проблем вылезут до этапа деплоя в продакшен, а так же при наличие <del>комплекса неполноценности</del> <del>неуверенности</del> <em>перфекциониста</em>, всегда будет не нравится то как это делается, и будет хоть понемногу, но улучшать этот процесс.</p>
+<p>Во-вторых надо максимально упростить сам запуск приложения. Что происходило раньше: </p>
+<ol>
+<li>руками заходили на сервер или что хуже программировали на chef/puppet</li>
+<li>воссоздавали среду необходимою для запуска приложения</li>
+<li>строили и настраивали приложение</li>
+<li>запускали</li>
+</ol>
+<p>Так вот второй этап всегда приносил больше всего боли, и причин этому много. Это и различные платформы, и зависимости которые требовали индивидуального подхода (костыли), и приложения соседи, и т.д.</p>
+<p>Docker как раз решает эту проблему. Больше не надо нанимать «отдельного программиста» на chef для написания сотен строк рецепта для поднятия приложения. Деплой с docker упрощается и сводится только к тому как/чем распространить контейнер на сервера. В самом простом случае можно зайти руками на сервер и запустить пару команд для поднятия сложного приложения. Если инфраструктура сложнее то без какой либо системы управления не обойтись, но их конфигурация опять же упростится и будет сводится уже только к тому куда и какой контейнер залить.</p>
+<p>Насколько сейчас видно, docker пытается пойти в нишу chef и сделать свои тулзы для управления кластерами, я это очень приветствую, хуже шефа они точно не сделают.</p>
+<p>На словах это всё звучит как бред, но на практике меня это подкупило. Вот например как выглядит мой конфиг для запуска <a href="https://github.com/getsentry/sentry" target="_blank" rel="external">sentry</a> сервера:</p>
+<figure class="highlight yaml"><figcaption><span>fig.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">sentry:</div><div class="line">  <span class="keyword">image</span>: slafs/sentry</div><div class="line">  ports:</div><div class="line">    - <span class="string">"80:9000"</span></div><div class="line">  links:</div><div class="line">    - redis</div><div class="line">  environment:</div><div class="line">    SENTRY_URL_PREFIX: <span class="string">"**********"</span></div><div class="line">    SECRET_KEY: <span class="string">"**********"</span></div><div class="line">    SENTRY_ADMIN_USERNAME: <span class="string">'admin'</span></div><div class="line">    SENTRY_ADMIN_PASSWORD: <span class="string">"**********"</span></div><div class="line">    SENTRY_ADMIN_EMAIL: <span class="string">"**********"</span></div><div class="line">    DATABASE_URL: <span class="string">"**********"</span></div><div class="line">    SENTRY_REDIS_HOST: <span class="string">'redis_1'</span></div><div class="line">    SENTRY_EMAIL_BACKEND: <span class="string">'django.core.mail.backends.smtp.EmailBackend'</span></div><div class="line">    SENTRY_EMAIL_HOST: <span class="string">'smtp.mailgun.org'</span></div><div class="line">    SENTRY_EMAIL_HOST_USER: <span class="string">"**********"</span></div><div class="line">    SENTRY_EMAIL_HOST_PASSWORD: <span class="string">"**********"</span></div><div class="line">    SENTRY_SERVER_EMAIL: <span class="string">"**********"</span></div><div class="line">redis:</div><div class="line">  <span class="keyword">image</span>: redis</div></pre></td></tr></table></figure>
+
+<p>Всё что мне надо сделать на сервере это выполнить <code>fig up</code> и я получаю рабочее приложение.</p>
+<p>Docker это не панацея и не решение всех проблем. Для больших проектов всё еще нужно средство для управления кластером и конфигурациями. Для сингл-сервер приложений, типа поднять сайтик на django + redis + postgres, docker сейчас самый мастхев.</p>
+<p>Я бы очень хотел сказать что docker это самый лучший в мире инструмент, но я очень насторожено отношусь к людям который очень хвалят что либо. Поэтому сразу скажу что считаю docker еще тем говнищем, которое идет в ногу со временем и поощряет общую глупость массы людей. И мнимая простота docker вводит в заблуждения, и рано или поздно вдарит пользователю в щи, документацию ведь никто не читает, а на всех выступлениях нам показывают как супер просто за 5-ть минут поднять сложнейшее приложение, но никто не рассказывает про боль с которой можно столкнутся. Например каждый второй контейнер на <a href="https://registry.hub.docker.com/" target="_blank" rel="external">https://registry.hub.docker.com/</a> вообще не предусматривает ситуации когда приложение крешнится (да я знаю что можно решить на стороне хоста, но про это тоже не рассказывают), или правильной настройкой логгирования для того что бы потом не искать по всей системе причины падения.</p>
+<p>Как и любое помешательство на чем либо, всеобщая истерия про docker плохо, но она указывает на проблему которую до сих пор не решили. Еще кстати вопрос насколько это большая истерия, и сколько людей на самом деле это волнует, и сколько вообще слышало про docker, но это уже другая тема по поводу которой меня может занести еще дальше.</p>
+<p>P.S я не имею реального опыта по управлению кластерами, все мой рассуждения для задач когда приложение не требует кластера из десятков серверов.</p>
+<p>P.P.S и да я не осилил chef/puppet, я их считаю дерьмовыми продуктами для разворачивания приложения на один сервер. Варианты делать rpm/deb пакеты даже не хочу рассматривать, кажется что это решит проблемы, но будет n+1 проблема.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/docker-100388953-orig.jpg" alt="docker - death to vmware, hyper-v and virtualbox"></p>
+<p><em>Хотел написать 140 слов о <a href="https://www.yahoo.com/tech/s/parallels-adopts-docker-next-cloud-220003984.html" target="_blank" rel="external">Parallels adopts Docker in next Cloud Server release</a>, но меня как то понесло…</em></p>
+<p>Я представляю как parallels кусает себе локти. Я нисколько не уменьшаю их заслуги в разработке тулов вокруг виртуализации, они очень много вложили в опенсоурс, но кто из обычных смертных за последние 10-ть лет хоть что-то пробовал запустить от parallels (кроме решения для домохозяек)? Или хотя бы задумывался над тем что продукты parallels могут решить какую-то повседневную проблему?</p>
+<p>Docker поэтому и стрельнул т.к любой слабоумный может взять, один раз завернуть свое приложение и запускать его на серверах без боли. А деплой любого приложения это боль, и я всегда смеюсь когда кто-то говорит – «осталось совсем немного, только задеплоть за 15 минут», т.к сам был тем кто это говорил.</p>
+]]>
+    
+    </summary>
+    
+      <category term="docker" scheme="http://yurtaev.link/tags/docker/"/>
+    
+      <category term="deploy" scheme="http://yurtaev.link/tags/deploy/"/>
+    
+      <category term="docker головного мозга" scheme="http://yurtaev.link/tags/docker-%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BC%D0%BE%D0%B7%D0%B3%D0%B0/"/>
+    
+      <category term="боль" scheme="http://yurtaev.link/tags/%D0%B1%D0%BE%D0%BB%D1%8C/"/>
+    
+      <category term="dev" scheme="http://yurtaev.link/categories/dev/"/>
+    
+      <category term="docker" scheme="http://yurtaev.link/categories/dev/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Linkstash #50]]></title>
+    <link href="http://yurtaev.link/2014/12/13/Linkstash-50/"/>
+    <id>http://yurtaev.link/2014/12/13/Linkstash-50/</id>
+    <published>2014-12-13T07:53:26.000Z</published>
+    <updated>2014-12-14T12:00:12.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="http://www.evanmiller.org/you-cant-dig-upwards.html" target="_blank" rel="external">Самый крутой бро Evan Miller четко сформулировал почему “Python” плох как первый язык. И то почему все мой подходы к Си закончились так и не успев начаться</a> #thinking #Evan</li>
+<li><a href="http://www.fse.guru/2-years-with-angular" target="_blank" rel="external">2 years with Angular</a> <em>Verdict: good enough (not really)</em> Почти согласен с выводами, ангуляр не прощает глупость разработчика <em>(а сейчас во фронтенде это 90% разработчиков)</em>, но ангуляр дает почти все инструменты для разработки сложного приложения. И да, он не совсем объясняет как правильно пользоваться всеми инструментами, и поэтому иногда получается что отверткой забивают гвозди, а молотком ударяют по пальцам, но при этом инвестировав в изучение оно скорее всего окупится. Я был не сильно рад когда сообщили что angular 2.0  будет не совместим, но потом понял что у них есть все шансы при переписывание учесть все ошибки и сделать годное решение <em>(при этом точно появятся другие, но жизнь тоже не сразу зародилась)</em> #angularjs #frontend #thinking</li>
+<li><a href="http://adambard.com/blog/clojure-is-not-for-geniuses/" target="_blank" rel="external">Clojure is not for geniuses</a> #clojure #thinking</li>
+<li><a href="http://natmchugh.blogspot.ru/2014/10/how-i-created-two-images-with-same-md5.html" target="_blank" rel="external">How I created two images with the same MD5 hash</a> или еще раз почему не стоит использовать md5 #cryptography #security #md5<a id="more"></a></li>
+<li><a href="http://sergeykorol.ru/blog/how-to-write-well/" target="_blank" rel="external">Рецензия на «Как писать хорошо»</a> <strong>(не про код)</strong> P.S а так как я необразованный быдлан то мне помогают:<ul>
+<li><a href="http://api.yandex.ru/speller/" target="_blank" rel="external">http://api.yandex.ru/speller/</a></li>
+<li><a href="http://glvrd.ru/" target="_blank" rel="external">http://glvrd.ru/</a></li>
+<li><a href="http://ru.readability.io/" target="_blank" rel="external">http://ru.readability.io/</a></li>
+</ul>
+</li>
+<li><a href="https://blog.recurly.com/2014/05/clustering-redis-maximize-uptime-scale" target="_blank" rel="external">Clustering redis to maximize uptime and scale</a> Прошло три года, а я так и не дождался redis cluster. #redis</li>
+<li><a href="http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html" target="_blank" rel="external">async vs. defer attributes</a> Простота залог успеха #frontend #browser</li>
+<li><a href="http://www.sencha.com/blog/apple-shows-love-for-html5-with-ios-8" target="_blank" rel="external">Apple Shows Love for HTML5 with iOS 8</a> Очень подробно про новинки WebView в iOS8 #ios #frontend</li>
+<li><a href="https://speakerdeck.com/addyosmani/javascript-memory-management-masterclass" target="_blank" rel="external">JavaScript Memory Management Masterclass</a> Очень, очень подробно, а потом я включил видео… Ах да, это же Эдди ^_^ #frontend #javascript #memory #slides #video</li>
+<li>Самый лучший доклад этого полугодия – <a href="http://www.youtube.com/watch?v=mGz_MExn6qQ&amp;feature=youtu.be" target="_blank" rel="external">Почему я пишу хороший код, но его не ценят</a> #video #best #thinking #slides</li>
+<li><a href="http://www.presslabs.com/gitfs/" target="_blank" rel="external">gitfs</a> FUSE драйвер для git!!! Я вот думаю попробовать на папке с документами которые я пишу (в markdown конечно), а то иногда надо историю посмотреть, а dropbox в этом очень плох. P.S кстати почти втащил <a href="https://github.com/s3fs-fuse/s3fs-fuse" target="_blank" rel="external">s3fs</a> в продакшен, и пока оно даже работает #git #fuse</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li><a href="http://www.evanmiller.org/you-cant-dig-upwards.html" target="_blank" rel="external">Самый крутой бро Evan Miller четко сформулировал почему “Python” плох как первый язык. И то почему все мой подходы к Си закончились так и не успев начаться</a> #thinking #Evan</li>
+<li><a href="http://www.fse.guru/2-years-with-angular" target="_blank" rel="external">2 years with Angular</a> <em>Verdict: good enough (not really)</em> Почти согласен с выводами, ангуляр не прощает глупость разработчика <em>(а сейчас во фронтенде это 90% разработчиков)</em>, но ангуляр дает почти все инструменты для разработки сложного приложения. И да, он не совсем объясняет как правильно пользоваться всеми инструментами, и поэтому иногда получается что отверткой забивают гвозди, а молотком ударяют по пальцам, но при этом инвестировав в изучение оно скорее всего окупится. Я был не сильно рад когда сообщили что angular 2.0  будет не совместим, но потом понял что у них есть все шансы при переписывание учесть все ошибки и сделать годное решение <em>(при этом точно появятся другие, но жизнь тоже не сразу зародилась)</em> #angularjs #frontend #thinking</li>
+<li><a href="http://adambard.com/blog/clojure-is-not-for-geniuses/" target="_blank" rel="external">Clojure is not for geniuses</a> #clojure #thinking</li>
+<li><a href="http://natmchugh.blogspot.ru/2014/10/how-i-created-two-images-with-same-md5.html" target="_blank" rel="external">How I created two images with the same MD5 hash</a> или еще раз почему не стоит использовать md5 #cryptography #security #md5]]>
+    
+    </summary>
+    
+      <category term="git" scheme="http://yurtaev.link/tags/git/"/>
+    
+      <category term="frontend" scheme="http://yurtaev.link/tags/frontend/"/>
+    
+      <category term="cryptography" scheme="http://yurtaev.link/tags/cryptography/"/>
+    
+      <category term="clojure" scheme="http://yurtaev.link/tags/clojure/"/>
+    
+      <category term="thinking" scheme="http://yurtaev.link/tags/thinking/"/>
+    
+      <category term="redis" scheme="http://yurtaev.link/tags/redis/"/>
+    
+      <category term="javascript" scheme="http://yurtaev.link/tags/javascript/"/>
+    
+      <category term="ios" scheme="http://yurtaev.link/tags/ios/"/>
+    
+      <category term="slides" scheme="http://yurtaev.link/tags/slides/"/>
+    
+      <category term="fuse" scheme="http://yurtaev.link/tags/fuse/"/>
+    
+      <category term="video" scheme="http://yurtaev.link/tags/video/"/>
+    
+      <category term="angularjs" scheme="http://yurtaev.link/tags/angularjs/"/>
+    
+      <category term="memory" scheme="http://yurtaev.link/tags/memory/"/>
+    
+      <category term="evan" scheme="http://yurtaev.link/tags/evan/"/>
+    
+      <category term="security" scheme="http://yurtaev.link/tags/security/"/>
+    
+      <category term="browser" scheme="http://yurtaev.link/tags/browser/"/>
+    
+      <category term="best" scheme="http://yurtaev.link/tags/best/"/>
+    
+      <category term="md5" scheme="http://yurtaev.link/tags/md5/"/>
+    
+      <category term="linkstash" scheme="http://yurtaev.link/categories/linkstash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Linkstash #37]]></title>
+    <link href="http://yurtaev.link/2014/09/08/Linkstash-37/"/>
+    <id>http://yurtaev.link/2014/09/08/Linkstash-37/</id>
+    <published>2014-09-07T19:36:16.000Z</published>
+    <updated>2014-11-22T19:39:56.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="http://tonsky.livejournal.com/293723.html" target="_blank" rel="external">Правильные мысли про стандартизацию JSON API</a> #json #rest #api</li>
+<li><a href="https://www.easycron.com/" target="_blank" rel="external">гениальный сервис cron как SaaS</a> #cron #service #automation #scheduling #online #webhooks</li>
+<li><a href="http://www.sitepoint.com/3-new-javascript-apis-may-want-follow/" target="_blank" rel="external">3 новыйх js API про которые я и правда не знал</a> #javascript #api #frontend</li>
+<li><a href="http://studentduniya.in/difference-undefined-null-value-javascript" target="_blank" rel="external">различия между  <code>undefined</code> and <code>null</code></a> #js #frontend #null #undefined</li>
+<li><a href="http://javascriptplayground.com/the-refactoring-tales/refactoring-tales.html" target="_blank" rel="external">хорошие советы по рефакторингу js</a> #javascript #hints #refactoring #frontend</li>
+<li><a href="http://blog.oxrud.com/posts/creating-youtube-directive/" target="_blank" rel="external">Creating a YouTube AngularJS Directive</a> #angularjs #tutorial #frontend</li>
+<li><a href="http://davidwalsh.name/es6-generators" target="_blank" rel="external">Про генераторы в es6, и почему только сейчас они появляются?!</a> #javascript #es6 #generators</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li><a href="http://tonsky.livejournal.com/293723.html" target="_blank" rel="external">Правильные мысли про стандартизацию JSON API</a>]]>
+    </summary>
+    
+      <category term="es6" scheme="http://yurtaev.link/tags/es6/"/>
+    
+      <category term="frontend" scheme="http://yurtaev.link/tags/frontend/"/>
+    
+      <category term="undefined" scheme="http://yurtaev.link/tags/undefined/"/>
+    
+      <category term="service" scheme="http://yurtaev.link/tags/service/"/>
+    
+      <category term="javascript" scheme="http://yurtaev.link/tags/javascript/"/>
+    
+      <category term="js" scheme="http://yurtaev.link/tags/js/"/>
+    
+      <category term="automation" scheme="http://yurtaev.link/tags/automation/"/>
+    
+      <category term="cron" scheme="http://yurtaev.link/tags/cron/"/>
+    
+      <category term="refactoring" scheme="http://yurtaev.link/tags/refactoring/"/>
+    
+      <category term="json" scheme="http://yurtaev.link/tags/json/"/>
+    
+      <category term="api" scheme="http://yurtaev.link/tags/api/"/>
+    
+      <category term="generators" scheme="http://yurtaev.link/tags/generators/"/>
+    
+      <category term="rest" scheme="http://yurtaev.link/tags/rest/"/>
+    
+      <category term="angularjs" scheme="http://yurtaev.link/tags/angularjs/"/>
+    
+      <category term="online" scheme="http://yurtaev.link/tags/online/"/>
+    
+      <category term="scheduling" scheme="http://yurtaev.link/tags/scheduling/"/>
+    
+      <category term="webhooks" scheme="http://yurtaev.link/tags/webhooks/"/>
+    
+      <category term="null" scheme="http://yurtaev.link/tags/null/"/>
+    
+      <category term="tutorial" scheme="http://yurtaev.link/tags/tutorial/"/>
+    
+      <category term="hints" scheme="http://yurtaev.link/tags/hints/"/>
+    
+      <category term="linkstash" scheme="http://yurtaev.link/categories/linkstash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Linkstash #36]]></title>
+    <link href="http://yurtaev.link/2014/09/01/Linkstash-36/"/>
+    <id>http://yurtaev.link/2014/09/01/Linkstash-36/</id>
+    <published>2014-08-31T19:34:32.000Z</published>
+    <updated>2014-11-22T19:35:19.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="http://semanticweb.com/j-son-ld-official-web-standard_b41441" target="_blank" rel="external">JSON-LD очередная попытка стандартизирвоать JSON для REST API, что люди только не делают лишь бы не использовать протобаф</a> #json #json-ld</li>
+<li><a href="http://shahriar.svbtle.com/pythons-else-clause-in-loops" target="_blank" rel="external">неочевидный очевидный <code>else</code> в циклах</a> #python #hints #loop #else</li>
+<li><a href="http://blog.newrelic.com/2014/07/15/geekspeak-data/" target="_blank" rel="external">10 Things Non-Developers Love To Say To Developers</a> #numbers #blabla</li>
+<li><a href="http://www.fig.sh/" target="_blank" rel="external">Еще одна альтернатива умершему maestro для создания docker контейнеров</a> #docker #containers #environments #manage</li>
+<li><a href="http://mitmproxy.org/" target="_blank" rel="external">Тулза для анализа трафика на python, надо пощюпать как оно в деле</a> #python #proxy #security #tools #testing #mitm #development #python</li>
+<li><a href="http://css.yoksel.ru/svg-stroke/" target="_blank" rel="external">Странности обводки в SVG</a> #svg #workaround #hack</li>
+<li><a href="http://www.toptal.com/python/interview-questions" target="_blank" rel="external">5 Great Python Interview Questions</a> #python #questions</li>
+<li><a href="http://toddmotto.com/opinionated-angular-js-styleguide-for-teams/?utm_content=bufferc3e59&amp;utm_medium=social&amp;utm_source=plus.google.com&amp;utm_campaign=buffer" target="_blank" rel="external">Бла бла про тимстайлгайд по разработке на angularjs</a> #angularjs #styleguide</li>
+<li><a href="http://readwrite.com/2014/07/24/object-observe-javascript-api-impact" target="_blank" rel="external">Коротко про observe в ES6, есть более подробные статьй</a> #frontend #javascript #es6 #observe</li>
+<li><a href="https://www.djangoproject.com/weblog/2014/jul/27/17rc2/" target="_blank" rel="external">RC 2 django 1.7 уже просрали все даты выпуска на 2 месяца</a> #django</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li><a href="http://semanticweb.com/j-son-ld-official-web-standard_b41441" target="_blank" rel="external">JSON-LD очередная попытка ста]]>
+    </summary>
+    
+      <category term="frontend" scheme="http://yurtaev.link/tags/frontend/"/>
+    
+      <category term="questions" scheme="http://yurtaev.link/tags/questions/"/>
+    
+      <category term="manage" scheme="http://yurtaev.link/tags/manage/"/>
+    
+      <category term="environments" scheme="http://yurtaev.link/tags/environments/"/>
+    
+      <category term="numbers" scheme="http://yurtaev.link/tags/numbers/"/>
+    
+      <category term="angularjs" scheme="http://yurtaev.link/tags/angularjs/"/>
+    
+      <category term="hack" scheme="http://yurtaev.link/tags/hack/"/>
+    
+      <category term="tools" scheme="http://yurtaev.link/tags/tools/"/>
+    
+      <category term="workaround" scheme="http://yurtaev.link/tags/workaround/"/>
+    
+      <category term="json" scheme="http://yurtaev.link/tags/json/"/>
+    
+      <category term="containers" scheme="http://yurtaev.link/tags/containers/"/>
+    
+      <category term="development" scheme="http://yurtaev.link/tags/development/"/>
+    
+      <category term="testing" scheme="http://yurtaev.link/tags/testing/"/>
+    
+      <category term="python" scheme="http://yurtaev.link/tags/python/"/>
+    
+      <category term="javascript" scheme="http://yurtaev.link/tags/javascript/"/>
+    
+      <category term="else" scheme="http://yurtaev.link/tags/else/"/>
+    
+      <category term="mitm" scheme="http://yurtaev.link/tags/mitm/"/>
+    
+      <category term="proxy" scheme="http://yurtaev.link/tags/proxy/"/>
+    
+      <category term="security" scheme="http://yurtaev.link/tags/security/"/>
+    
+      <category term="hints" scheme="http://yurtaev.link/tags/hints/"/>
+    
+      <category term="es6" scheme="http://yurtaev.link/tags/es6/"/>
+    
+      <category term="styleguide" scheme="http://yurtaev.link/tags/styleguide/"/>
+    
+      <category term="svg" scheme="http://yurtaev.link/tags/svg/"/>
+    
+      <category term="django" scheme="http://yurtaev.link/tags/django/"/>
+    
+      <category term="observe" scheme="http://yurtaev.link/tags/observe/"/>
+    
+      <category term="blabla" scheme="http://yurtaev.link/tags/blabla/"/>
+    
+      <category term="docker" scheme="http://yurtaev.link/tags/docker/"/>
+    
+      <category term="loop" scheme="http://yurtaev.link/tags/loop/"/>
+    
+      <category term="linkstash" scheme="http://yurtaev.link/categories/linkstash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Linkstash #35]]></title>
+    <link href="http://yurtaev.link/2014/08/25/Linkstash-35/"/>
+    <id>http://yurtaev.link/2014/08/25/Linkstash-35/</id>
+    <published>2014-08-24T19:31:55.000Z</published>
+    <updated>2014-11-22T19:33:54.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="http://softwaremaniacs.org/blog/2014/07/21/dissecting-fetchers/" target="_blank" rel="external">Сагалаев пытается вернуться к питону</a> #python #oauth #softwaremaniacs</li>
+<li><a href="http://es6rocks.com" target="_blank" rel="external">сайтик про ES6</a> #javascript #frontend #es6</li>
+<li><a href="http://www.hakkalabs.co/articles/whats-next-docker" target="_blank" rel="external">про то куда будет двигаться docker или уже</a> #docker #video #slides</li>
+<li><a href="https://medium.com/@dickeyxxx/best-practices-for-building-angular-js-apps-266c1a4a6917" target="_blank" rel="external">бла бла практики для angular</a> #angular #frontend #practices</li>
+<li><a href="http://blog.docker.com/2014/07/dockercon-video-aws-elastic-beanstalk-and-docker/" target="_blank" rel="external">про docker поверх aws beanstalk</a> #docker #aws #beanstalk</li>
+<li><a href="http://yager.io/programming/go.html" target="_blank" rel="external">правдивый вброс про то почему Go отстой</a> #go</li>
+<li><a href="http://blog.docker.com/2014/06/why-you-dont-need-to-run-sshd-in-docker/" target="_blank" rel="external">про очевидные проблемы в docker</a> #docker</li>
+<li><a href="http://web-standards.ru/articles/css-architecture/" target="_blank" rel="external">Архитектура CSS</a> #css #frontend</li>
+<li><a href="http://arunrocks.com/real-time-applications-and-will-django-adapt-to-it/" target="_blank" rel="external">почему django не в тренде и не будет больше никогда</a> #django</li>
+<li><a href="http://vimeo.com/channels/wstdays" target="_blank" rel="external">видосы с wstdays</a> #video #slides #frontend</li>
+<li><a href="http://www.tornadoweb.org/en/stable/releases/v4.0.0.html" target="_blank" rel="external">торнадо 4!!!!</a> #tornado #python</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li><a href="http://softwaremaniacs.org/blog/2014/07/21/dissecting-fetchers/" target="_blank" rel="external">Сагалаев пытается вернутьс]]>
+    </summary>
+    
+      <category term="es6" scheme="http://yurtaev.link/tags/es6/"/>
+    
+      <category term="frontend" scheme="http://yurtaev.link/tags/frontend/"/>
+    
+      <category term="python" scheme="http://yurtaev.link/tags/python/"/>
+    
+      <category term="oauth" scheme="http://yurtaev.link/tags/oauth/"/>
+    
+      <category term="javascript" scheme="http://yurtaev.link/tags/javascript/"/>
+    
+      <category term="aws" scheme="http://yurtaev.link/tags/aws/"/>
+    
+      <category term="softwaremaniacs" scheme="http://yurtaev.link/tags/softwaremaniacs/"/>
+    
+      <category term="django" scheme="http://yurtaev.link/tags/django/"/>
+    
+      <category term="slides" scheme="http://yurtaev.link/tags/slides/"/>
+    
+      <category term="tornado" scheme="http://yurtaev.link/tags/tornado/"/>
+    
+      <category term="beanstalk" scheme="http://yurtaev.link/tags/beanstalk/"/>
+    
+      <category term="practices" scheme="http://yurtaev.link/tags/practices/"/>
+    
+      <category term="video" scheme="http://yurtaev.link/tags/video/"/>
+    
+      <category term="go" scheme="http://yurtaev.link/tags/go/"/>
+    
+      <category term="docker" scheme="http://yurtaev.link/tags/docker/"/>
+    
+      <category term="angular" scheme="http://yurtaev.link/tags/angular/"/>
+    
+      <category term="css" scheme="http://yurtaev.link/tags/css/"/>
+    
+      <category term="linkstash" scheme="http://yurtaev.link/categories/linkstash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Linkstash #34]]></title>
+    <link href="http://yurtaev.link/2014/08/20/Linkstash-34/"/>
+    <id>http://yurtaev.link/2014/08/20/Linkstash-34/</id>
+    <published>2014-08-19T19:08:36.000Z</published>
+    <updated>2014-12-07T12:51:37.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="http://blog.jupo.org/2013/10/23/higher-order-types-for-redis/" target="_blank" rel="external">Higher Order Types for Redis</a> #redis #python</li>
+<li><a href="http://blog.jupo.org/2013/02/23/a-tale-of-two-queues/" target="_blank" rel="external">A Tale of Two Queues</a> #redis #zeromq #python #go</li>
+<li><a href="http://tonyganch.com/parsers/csscomb-core/" target="_blank" rel="external">Как написать постпроцессор, потратив минимум времени</a> #css #postprocessor</li>
+<li><a href="http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/" target="_blank" rel="external">Scaling Down The BEM Methodology For Small Projects</a> #css #BEM #frontend</li>
+<li><a href="http://www.machinalis.com/blog/optimizing-your-tests-in-django/" target="_blank" rel="external">Optimizing your tests in Django</a> #django #tests</li>
+<li><a href="http://addyosmani.com/blog/mutation-observers/" target="_blank" rel="external">Detect, Undo And Redo DOM Changes With Mutation Observers</a> #javascript #front</li>
+<li><a href="http://morepypy.blogspot.ru/2014/07/pypy-stm-first-interesting-release.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+PyPyStatusBlog+(PyPy+Status+Blog" target="_blank" rel="external">первый релиз PyPy с STM</a> #python #pypy #stm<a id="more"></a></li>
+<li><a href="http://www.webforefront.com/django/setuphttphandlingindjangoviews.html" target="_blank" rel="external">Set up HTTP handling in Django view methods</a> #django #recipes</li>
+<li><a href="http://blog.etianen.com/blog/2013/06/08/django-querysets/" target="_blank" rel="external">Using Django querysets effectively</a> #django #performance</li>
+<li><a href="http://blog.yourlabs.org/post/20162841739/django-generic-relations-and-performances-solutions" target="_blank" rel="external">Django generic relations and performances: solutions</a> #django #performance</li>
+<li><a href="http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/" target="_blank" rel="external">Automated Nginx Reverse Proxy for Docker</a> #docker #nginx</li>
+<li><a href="http://blog.webbox.io/2014/07/08/dependency-injection/?utm_content=buffer0491e&amp;utm_medium=social&amp;utm_source=plus.google.com&amp;utm_campaign=buffer" target="_blank" rel="external">Dependency injection in JavaScript</a> #javascript #di</li>
+<li><a href="http://truecryer.wordpress.com/2014/07/16/class-based-views-%D0%B8%D0%BB%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BD%D0%B0-%D0%BA-3/" target="_blank" rel="external">про django CBV в 3-х частях</a> #django #CBV #python</li>
+<li><a href="http://blog.docker.com/2014/07/10-docker-tips-and-tricks-that-will-make-you-sing-a-whale-song-of-joy/" target="_blank" rel="external">TEN DOCKER TIPS AND TRICKS THAT WILL MAKE YOU SING A WHALE SONG OF JOY</a> #Docker</li>
+<li><a href="http://lignos.org/py_antipatterns/" target="_blank" rel="external">Anti-Patterns in Python Programming</a> #python #anti-patterns</li>
+<li><a href="http://toddmotto.com/web-components-concepts-shadow-dom-imports-templates-custom-elements/" target="_blank" rel="external">Web Components and concepts, ShadowDOM, imports, templates, custom elements</a> #frontend #webcomponents</li>
+<li><a href="https://github.com/vinta/awesome-python" target="_blank" rel="external">большая подборка библиотек для всего на python</a> #python</li>
+<li><a href="http://asmeurer.github.io/python3-presentation/python3-presentation.pdf" target="_blank" rel="external">10 awesome features of Python that you can’t use because you refuse to upgrade to Python 3</a> #python #python3 #features</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li><a href="http://blog.jupo.org/2013/10/23/higher-order-types-for-redis/" target="_blank" rel="external">Higher Order Types for Redis</a> #redis #python</li>
+<li><a href="http://blog.jupo.org/2013/02/23/a-tale-of-two-queues/" target="_blank" rel="external">A Tale of Two Queues</a> #redis #zeromq #python #go</li>
+<li><a href="http://tonyganch.com/parsers/csscomb-core/" target="_blank" rel="external">Как написать постпроцессор, потратив минимум времени</a> #css #postprocessor</li>
+<li><a href="http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/" target="_blank" rel="external">Scaling Down The BEM Methodology For Small Projects</a> #css #BEM #frontend</li>
+<li><a href="http://www.machinalis.com/blog/optimizing-your-tests-in-django/" target="_blank" rel="external">Optimizing your tests in Django</a> #django #tests</li>
+<li><a href="http://addyosmani.com/blog/mutation-observers/" target="_blank" rel="external">Detect, Undo And Redo DOM Changes With Mutation Observers</a> #javascript #front</li>
+<li><a href="http://morepypy.blogspot.ru/2014/07/pypy-stm-first-interesting-release.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+PyPyStatusBlog+(PyPy+Status+Blog" target="_blank" rel="external">первый релиз PyPy с STM</a> #python #pypy #stm]]>
+    
+    </summary>
+    
+      <category term="frontend" scheme="http://yurtaev.link/tags/frontend/"/>
+    
+      <category term="features" scheme="http://yurtaev.link/tags/features/"/>
+    
+      <category term="cbv" scheme="http://yurtaev.link/tags/cbv/"/>
+    
+      <category term="go" scheme="http://yurtaev.link/tags/go/"/>
+    
+      <category term="webcomponents" scheme="http://yurtaev.link/tags/webcomponents/"/>
+    
+      <category term="redis" scheme="http://yurtaev.link/tags/redis/"/>
+    
+      <category term="postprocessor" scheme="http://yurtaev.link/tags/postprocessor/"/>
+    
+      <category term="performance" scheme="http://yurtaev.link/tags/performance/"/>
+    
+      <category term="zeromq" scheme="http://yurtaev.link/tags/zeromq/"/>
+    
+      <category term="css" scheme="http://yurtaev.link/tags/css/"/>
+    
+      <category term="tests" scheme="http://yurtaev.link/tags/tests/"/>
+    
+      <category term="di" scheme="http://yurtaev.link/tags/di/"/>
+    
+      <category term="python" scheme="http://yurtaev.link/tags/python/"/>
+    
+      <category term="javascript" scheme="http://yurtaev.link/tags/javascript/"/>
+    
+      <category term="nginx" scheme="http://yurtaev.link/tags/nginx/"/>
+    
+      <category term="front" scheme="http://yurtaev.link/tags/front/"/>
+    
+      <category term="pypy" scheme="http://yurtaev.link/tags/pypy/"/>
+    
+      <category term="python3" scheme="http://yurtaev.link/tags/python3/"/>
+    
+      <category term="bem" scheme="http://yurtaev.link/tags/bem/"/>
+    
+      <category term="stm" scheme="http://yurtaev.link/tags/stm/"/>
+    
+      <category term="recipes" scheme="http://yurtaev.link/tags/recipes/"/>
+    
+      <category term="django" scheme="http://yurtaev.link/tags/django/"/>
+    
+      <category term="anti" scheme="http://yurtaev.link/tags/anti/"/>
+    
+      <category term="docker" scheme="http://yurtaev.link/tags/docker/"/>
+    
+      <category term="linkstash" scheme="http://yurtaev.link/categories/linkstash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Linkstash #33]]></title>
+    <link href="http://yurtaev.link/2014/08/13/linkstash-33/"/>
+    <id>http://yurtaev.link/2014/08/13/linkstash-33/</id>
+    <published>2014-08-12T19:04:21.000Z</published>
+    <updated>2014-12-07T12:46:41.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="http://www.infoq.com/news/2014/08/python-type-annotation-proposal?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="external">Гвидо опять сходит сума, теперь предлагает ввести необязательную статическую типизацию. Попахивает языком Julia</a> #python #static typing #pep</li>
+<li><a href="https://mail.python.org/pipermail/python-ideas/2014-August/028618.html" target="_blank" rel="external">Ну и про это в мейл рассылке</a> #python #static typing #pep</li>
+<li><a href="http://lucumr.pocoo.org/2014/8/16/the-python-i-would-like-to-see/" target="_blank" rel="external">Армин всё вбрасывает на питон <em>(а вот не женился бы, было бы всё хорошо)</em></a> #python #Armin</li>
+<li><a href="http://danielmartins.ninja/posts/a-week-of-docker.html" target="_blank" rel="external">Годная вводная статья в docker. Коротко зачем, почему и как</a> #docker #tutorial #faq</li>
+<li><a href="http://jaxenter.com/introducing-erjang-erlang-for-the-jvm-50884.html" target="_blank" rel="external">Erjang - erlang поверх JVM. Это как минимум “забавно”…</a> #erlang #jvm</li>
+<li><a href="https://www.irccloud.com/" target="_blank" rel="external">Нашел для себя приличный IRC клиент для mac + ios</a> #irc<a id="more"></a></li>
+<li><a href="http://morepypy.blogspot.ru/2014/08/a-field-test-of-software-transactional.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+PyPyStatusBlog+(PyPy+Status+Blog" target="_blank" rel="external">A Field Test of Software Transactional Memory Using the RSqueak Smalltalk VM</a>) #pypy #stm #benchmark</li>
+<li><a href="http://zelark.ru/blog/all/functional-programing-meetup/" target="_blank" rel="external">Митап о функциональном программировании</a> #fp #slides #video</li>
+<li><a href="http://dmitrysoshnikov.com/notes/pattern-matching/" target="_blank" rel="external">Доступно про pattern matching</a> #pattern matching</li>
+<li><a href="http://www.gitignore.io/" target="_blank" rel="external">Сервис по генерации gitignore</a> а я раньше использовал <a href="https://github.com/github/gitignore" target="_blank" rel="external">https://github.com/github/gitignore</a> #gitignore #git #service #generator</li>
+<li><a href="http://www.lambdapad.io/" target="_blank" rel="external">lambdapad генератор статических сайтов на erlang!</a> #erlang #docpad #static site #generator</li>
+<li><a href="https://github.com/fastmonkeys/stellar/" target="_blank" rel="external">утилита для быстрого сохранения/восстановления снепшота БД, интересная идея, но пока куча багов</a></li>
+<li><a href="http://bjorn.tipling.com/if-programming-languages-were-weapons" target="_blank" rel="external">что если бы ЯП были оружием</a></li>
+<li><a href="https://developer.apple.com/app-store/review/rejections/" target="_blank" rel="external">The Top 10 Reasons They Reject Apps</a></li>
+<li><a href="http://blog.sendwithus.com/python-templating-performance-showdown-django-vs-jinja/" target="_blank" rel="external">Свежее сравнение шаблонизаторов django vs. jinja</a> #django #jinja #templates #template engine</li>
+<li><a href="http://grokcode.com/864/snakefooding-python-code-for-complexity-visualization/" target="_blank" rel="external">Крутая визуализация внутренних зависимостей внутри python проектов</a> #python #visualization</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li><a href="http://www.infoq.com/news/2014/08/python-type-annotation-proposal?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="external">Гвидо опять сходит сума, теперь предлагает ввести необязательную статическую типизацию. Попахивает языком Julia</a> #python #static typing #pep</li>
+<li><a href="https://mail.python.org/pipermail/python-ideas/2014-August/028618.html" target="_blank" rel="external">Ну и про это в мейл рассылке</a> #python #static typing #pep</li>
+<li><a href="http://lucumr.pocoo.org/2014/8/16/the-python-i-would-like-to-see/" target="_blank" rel="external">Армин всё вбрасывает на питон <em>(а вот не женился бы, было бы всё хорошо)</em></a> #python #Armin</li>
+<li><a href="http://danielmartins.ninja/posts/a-week-of-docker.html" target="_blank" rel="external">Годная вводная статья в docker. Коротко зачем, почему и как</a> #docker #tutorial #faq</li>
+<li><a href="http://jaxenter.com/introducing-erjang-erlang-for-the-jvm-50884.html" target="_blank" rel="external">Erjang - erlang поверх JVM. Это как минимум “забавно”…</a> #erlang #jvm</li>
+<li><a href="https://www.irccloud.com/" target="_blank" rel="external">Нашел для себя приличный IRC клиент для mac + ios</a> #irc]]>
+    
+    </summary>
+    
+      <category term="templates" scheme="http://yurtaev.link/tags/templates/"/>
+    
+      <category term="docpad" scheme="http://yurtaev.link/tags/docpad/"/>
+    
+      <category term="video" scheme="http://yurtaev.link/tags/video/"/>
+    
+      <category term="tutorial" scheme="http://yurtaev.link/tags/tutorial/"/>
+    
+      <category term="gitignore" scheme="http://yurtaev.link/tags/gitignore/"/>
+    
+      <category term="git" scheme="http://yurtaev.link/tags/git/"/>
+    
+      <category term="jinja" scheme="http://yurtaev.link/tags/jinja/"/>
+    
+      <category term="service" scheme="http://yurtaev.link/tags/service/"/>
+    
+      <category term="pattern" scheme="http://yurtaev.link/tags/pattern/"/>
+    
+      <category term="pep" scheme="http://yurtaev.link/tags/pep/"/>
+    
+      <category term="armin" scheme="http://yurtaev.link/tags/armin/"/>
+    
+      <category term="jvm" scheme="http://yurtaev.link/tags/jvm/"/>
+    
+      <category term="erlang" scheme="http://yurtaev.link/tags/erlang/"/>
+    
+      <category term="fp" scheme="http://yurtaev.link/tags/fp/"/>
+    
+      <category term="template" scheme="http://yurtaev.link/tags/template/"/>
+    
+      <category term="python" scheme="http://yurtaev.link/tags/python/"/>
+    
+      <category term="faq" scheme="http://yurtaev.link/tags/faq/"/>
+    
+      <category term="benchmark" scheme="http://yurtaev.link/tags/benchmark/"/>
+    
+      <category term="slides" scheme="http://yurtaev.link/tags/slides/"/>
+    
+      <category term="pypy" scheme="http://yurtaev.link/tags/pypy/"/>
+    
+      <category term="irc" scheme="http://yurtaev.link/tags/irc/"/>
+    
+      <category term="generator" scheme="http://yurtaev.link/tags/generator/"/>
+    
+      <category term="stm" scheme="http://yurtaev.link/tags/stm/"/>
+    
+      <category term="django" scheme="http://yurtaev.link/tags/django/"/>
+    
+      <category term="static" scheme="http://yurtaev.link/tags/static/"/>
+    
+      <category term="docker" scheme="http://yurtaev.link/tags/docker/"/>
+    
+      <category term="linkstash" scheme="http://yurtaev.link/categories/linkstash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Linkstash #32]]></title>
+    <link href="http://yurtaev.link/2014/08/05/linkstash-32/"/>
+    <id>http://yurtaev.link/2014/08/05/linkstash-32/</id>
+    <published>2014-08-04T18:47:55.000Z</published>
+    <updated>2014-12-07T12:37:14.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="http://angular-tips.com/blog/2013/08/watch-how-the-apply-runs-a-digest/" target="_blank" rel="external">стало чуть понятнее про <code>$watch</code> <code>$apply</code> <code>$digest</code></a> #angularjs #frontend</li>
+<li><a href="http://solovyov.net/blog/2014/showkr-cljs/" target="_blank" rel="external">@asolovyov снова про clojurescript</a> #clojurescript #frontend</li>
+<li><a href="http://keyholesoftware.com/2014/07/23/javascript-promises-are-cool/" target="_blank" rel="external">коротко про обещания в js</a> #javascript #frontend #promise #es6 #tutorial</li>
+<li><a href="http://engineering.clever.com/2014/07/29/testing-private-functions-in-javascript-modules/" target="_blank" rel="external">Testing Private Functions in JavaScript Modules</a> #javascript #unittest #tests #private_functions #frontend</li>
+<li><a href="https://github.com/0xAX/erlang-bookmarks/wiki/Erlang-bookmarks" target="_blank" rel="external">Erlang bookmarks</a> #erlang #bookmarks #links</li>
+<li><a href="http://bitworking.org/news/2014/05/zero_framework_manifesto" target="_blank" rel="external">вброс про то что хватит писать js библиотеки т.к грядет “прекрасное” будущее с новыми фичами es6/html5</a> #future #javascript #blabla #es6 #html5 #observe</li>
+<li><a href="http://yzh44yzh.by/post/erlang_for_web_2.html" target="_blank" rel="external">краткий обзор веб фреймворков на erlang</a> #erlang #webframework #framework</li>
+<li><a href="http://modernweb.com/2014/07/28/best-practices-building-angular-js-apps/" target="_blank" rel="external">real-world best practices for building angular.js apps without browserify or require.js</a> #angularjs #faq #requirejs #browserify #DI</li>
+<li><a href="http://markdotto.com/2014/07/23/githubs-css/#quick-facts" target="_blank" rel="external">советы по работе с CSS от чувака из github</a> #css #hints #github</li>
+<li><a href="https://github.com/rosarior/awesome-django" target="_blank" rel="external">список батареек для django</a> #django #list #hints #libs</li>
+<li><a href="http://qz.com/239332/google-has-run-away-with-the-web-search-market-and-almost-no-one-is-chasing/" target="_blank" rel="external">хорошая статья про монополию гугл</a> #google #blabla</li>
+<li><a href="https://github.com/facebook/immutable-js" target="_blank" rel="external">Immutable Data Collections for Javascript</a> #javascript #immutable #fp #lib</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li><a href="http://angular-tips.com/blog/2013/08/watch-how-the-apply-runs-a-digest/" target="_blank" rel="external">стало чуть понятне]]>
+    </summary>
+    
+      <category term="google" scheme="http://yurtaev.link/tags/google/"/>
+    
+      <category term="frontend" scheme="http://yurtaev.link/tags/frontend/"/>
+    
+      <category term="links" scheme="http://yurtaev.link/tags/links/"/>
+    
+      <category term="unittest" scheme="http://yurtaev.link/tags/unittest/"/>
+    
+      <category term="promise" scheme="http://yurtaev.link/tags/promise/"/>
+    
+      <category term="angularjs" scheme="http://yurtaev.link/tags/angularjs/"/>
+    
+      <category term="bookmarks" scheme="http://yurtaev.link/tags/bookmarks/"/>
+    
+      <category term="webframework" scheme="http://yurtaev.link/tags/webframework/"/>
+    
+      <category term="tutorial" scheme="http://yurtaev.link/tags/tutorial/"/>
+    
+      <category term="private_functions" scheme="http://yurtaev.link/tags/private-functions/"/>
+    
+      <category term="lib" scheme="http://yurtaev.link/tags/lib/"/>
+    
+      <category term="erlang" scheme="http://yurtaev.link/tags/erlang/"/>
+    
+      <category term="immutable" scheme="http://yurtaev.link/tags/immutable/"/>
+    
+      <category term="css" scheme="http://yurtaev.link/tags/css/"/>
+    
+      <category term="fp" scheme="http://yurtaev.link/tags/fp/"/>
+    
+      <category term="tests" scheme="http://yurtaev.link/tags/tests/"/>
+    
+      <category term="javascript" scheme="http://yurtaev.link/tags/javascript/"/>
+    
+      <category term="di" scheme="http://yurtaev.link/tags/di/"/>
+    
+      <category term="clojurescript" scheme="http://yurtaev.link/tags/clojurescript/"/>
+    
+      <category term="faq" scheme="http://yurtaev.link/tags/faq/"/>
+    
+      <category term="framework" scheme="http://yurtaev.link/tags/framework/"/>
+    
+      <category term="observe" scheme="http://yurtaev.link/tags/observe/"/>
+    
+      <category term="html5" scheme="http://yurtaev.link/tags/html5/"/>
+    
+      <category term="libs" scheme="http://yurtaev.link/tags/libs/"/>
+    
+      <category term="browserify" scheme="http://yurtaev.link/tags/browserify/"/>
+    
+      <category term="hints" scheme="http://yurtaev.link/tags/hints/"/>
+    
+      <category term="es6" scheme="http://yurtaev.link/tags/es6/"/>
+    
+      <category term="github" scheme="http://yurtaev.link/tags/github/"/>
+    
+      <category term="list" scheme="http://yurtaev.link/tags/list/"/>
+    
+      <category term="django" scheme="http://yurtaev.link/tags/django/"/>
+    
+      <category term="future" scheme="http://yurtaev.link/tags/future/"/>
+    
+      <category term="blabla" scheme="http://yurtaev.link/tags/blabla/"/>
+    
+      <category term="quick" scheme="http://yurtaev.link/tags/quick/"/>
+    
+      <category term="requirejs" scheme="http://yurtaev.link/tags/requirejs/"/>
+    
+      <category term="linkstash" scheme="http://yurtaev.link/categories/linkstash/"/>
+    
+  </entry>
+  
+</feed>
