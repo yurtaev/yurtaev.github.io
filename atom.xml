@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yurtaev.link/"/>
-  <updated>2014-12-28T10:34:20.639Z</updated>
+  <updated>2015-01-03T08:48:26.898Z</updated>
   <id>http://yurtaev.link/</id>
   
   <author>
@@ -13,6 +13,133 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Linkstash #1]]></title>
+    <link href="http://yurtaev.link/2015/01/03/Linkstash-1/"/>
+    <id>http://yurtaev.link/2015/01/03/Linkstash-1/</id>
+    <published>2015-01-03T08:44:44.000Z</published>
+    <updated>2015-01-03T08:45:10.000Z</updated>
+    <content type="html"><![CDATA[<p><em>Разгребаю свой список из <a href="https://chrome.google.com/webstore/detail/read-later-fast/decdfngdidijkdjgbknlnepdljfaepji?hl=ru" target="_blank" rel="external">Read Later Fast</a>, поэтому много баянов…</em></p>
+<h2 id="Frontend">Frontend</h2>
+<ul>
+<li><a href="http://www.thedotpost.com/2014/11/james-halliday-substack-immutable-offline-webapps" target="_blank" rel="external">Immutable offline webapps</a> 2015-ый будет годом нового баззворда «Offline First» который нужен 1% приложений #frontend #offline #video #slides</li>
+<li>В туже тему <a href="http://jakearchibald.com/2014/offline-cookbook/" target="_blank" rel="external">The offline cookbook</a> про будущее с ServiceWorker</li>
+<li><a href="https://www.mircozeiss.com/a-radical-new-approach-to-developing-angularjs-apps/" target="_blank" rel="external">A radical new approach to developing AngularJS apps</a> Годная статья по ангуляру, узнал пару полезных трюков #frontend #angularjs</li>
+<li><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript" target="_blank" rel="external">THE BIRTH &amp; DEATH OF JAVASCRIPT</a> Очень крутой доклад. Прям новое направление в жанре стендап выступлений для программистов. Вспоминается сразу великий <a href="https://www.destroyallsoftware.com/talks/wat" target="_blank" rel="external">WAT</a> #frontend #javascript #video #slides #best</li>
+<li><a href="http://findguidelin.es/" target="_blank" rel="external">Подборка стайлгайдов от различных сайтов</a> #frontend #guidelines #styleguide</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="Elixir">Elixir</h2>
+<ul>
+<li><a href="https://github.com/sugar-framework/sugar" target="_blank" rel="external">Разработчик sugar объявил о продолжение разработки</a> Очередной Rails-like фреймворк для Elixir. Ресурсов у них явно меньше чем у того же <a href="https://github.com/phoenixframework/phoenix" target="_blank" rel="external">Phoenix</a> #elixir #web_framework</li>
+<li><a href="http://joearms.github.io/2013/05/31/a-week-with-elixir.html" target="_blank" rel="external">Армстронг поделился впечатлениями после недели с Elixir</a> Очень, очень круто #elixir</li>
+<li><a href="https://github.com/batate/elixir-pipes" target="_blank" rel="external">Расширение функционала пайпов для Elixir</a> #elixir #pipe</li>
+</ul>
+<h2 id="Other">Other</h2>
+<ol>
+<li><a href="https://lists.torproject.org/pipermail/tor-dev/2014-December/007999.html" target="_blank" rel="external">Очередная (обоснованная) критика в сторону секьюрности проекта</a> <a href="http://www.tribler.org/" target="_blank" rel="external">Trible</a> И я уже почти перестал следить за проектом. Мало того что это здоровенный кусок тормозного кода на python, так и заявленную анонимность жду больше года. После получения абузы от HBO мой поиски анонимного способа получения/раздачи больших файлов завершились неудачей. Получил инвайт на проект в эту сторону, но разработка движется со скоростью жирной улитки. Да и вообще есть куча технических проблем в организации массовой анонимной сети для шаринга файлов, поэтому весь даркнет пропитан ностальгией по медленному интернету через диалап. #security #trible</li>
+<li><a href="http://www.falkoriemenschneider.de/a__2014-09-17__Programming-without-objects.html" target="_blank" rel="external">Programming without objects</a> Последнее время каждый раз когда я садился писать что-либо на ФП хотелось себя стукнуть за то что пытаюсь перенести свой опыт и чувство прекрасного из ООП. Меня дико бесит отсутствие чувства прекрасного при создание API к библиотеке с менее 10-тью методами. Вот сижу читаю книжки/бложики по ФП и киваю как всё правильно, а как сажусь писать чувствую себя ТП. Надо в 2015-ом накапливать опыт и чувство прекрасного по ФП. #fp #oop</li>
+<li><a href="https://github.com/lfex/py" target="_blank" rel="external">Distributed Python for the Erlang Ecosystem</a> #python #erlang #distributed</li>
+<li><a href="http://www.mircozeiss.com/secure-couchdb-by-using-ssl-https/" target="_blank" rel="external">Secure CouchDB by using SSL/HTTPS</a> #couchdb #guides</li>
+<li><a href="http://santosh.io/2014/12/20/erlang-vs-nodejs---a-tale-of-two-concurrency-models.html" target="_blank" rel="external">Из раздела юмор: «Erlang vs. NodeJS 1. A tale of two concurrency models»</a> Удивляюсь как люди такое способны сравнивать… #erlang #nodejs #humor</li>
+<li><a href="http://nathanfriend.io/inspirograph/" target="_blank" rel="external">Онлайн версия спирографа</a> #spirograph #online</li>
+<li>Наткнулся на <a href="https://nats.io/" target="_blank" rel="external">NATS</a> и <a href="http://www.bravenewgeek.com/dissecting-message-queues/" target="_blank" rel="external">бенчмарки MQ</a> Огорчает скудность документации у NATS. #MQ #benchmark</li>
+<li><a href="https://www.versioneye.com" target="_blank" rel="external">Сервис по отслеживанию обновлений зависимостей проекта</a> Вот так всегда, все гениальные идей кто-то реализует за тебя. #tools #versioncontrol #requirements</li>
+<li><a href="http://blog.tutum.co/2014/08/07/using-cadvisor-to-monitor-docker-containers/" target="_blank" rel="external">Using cAdvisor to Monitor Docker Containers</a> Пока еще не совсем понимаю профита от мониторинга контейнеров, но радует наличие таких тулзов. Вангую что в первой половине 2015 года Docker Inc купят за пару инстацентов. #docker #monitoring</li>
+<li><a href="http://antirez.com/news/81" target="_blank" rel="external">Diskless replication: a few design notes</a> как то я поздно обнаружил бложик разработчика Redis #redis #replication</li>
+<li><a href="https://github.com/what-studio/profiling" target="_blank" rel="external">Интерактивный профайлер для python</a> #python #profiler</li>
+<li><a href="https://medium.com/the-year-of-the-looking-glass/junior-designers-vs-senior-designers-fbe483d3b51e" target="_blank" rel="external">Очень понравилась иллюстрация различий между Junior vs. Senior дизайнером, и как мне кажется подходит для программистов тоже</a></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><em>Разгребаю свой список из <a href="https://chrome.google.com/webstore/detail/read-later-fast/decdfngdidijkdjgbknlnepdljfaepji?hl=ru" target="_blank" rel="external">Read Later Fast</a>, поэтому много баянов…</em></p>
+<h2 id="Frontend">Frontend</h2>
+<ul>
+<li><a href="http://www.thedotpost.com/2014/11/james-halliday-substack-immutable-offline-webapps" target="_blank" rel="external">Immutable offline webapps</a> 2015-ый будет годом нового баззворда «Offline First» который нужен 1% приложений #frontend #offline #video #slides</li>
+<li>В туже тему <a href="http://jakearchibald.com/2014/offline-cookbook/" target="_blank" rel="external">The offline cookbook</a> про будущее с ServiceWorker</li>
+<li><a href="https://www.mircozeiss.com/a-radical-new-approach-to-developing-angularjs-apps/" target="_blank" rel="external">A radical new approach to developing AngularJS apps</a> Годная статья по ангуляру, узнал пару полезных трюков #frontend #angularjs</li>
+<li><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript" target="_blank" rel="external">THE BIRTH &amp; DEATH OF JAVASCRIPT</a> Очень крутой доклад. Прям новое направление в жанре стендап выступлений для программистов. Вспоминается сразу великий <a href="https://www.destroyallsoftware.com/talks/wat" target="_blank" rel="external">WAT</a> #frontend #javascript #video #slides #best</li>
+<li><a href="http://findguidelin.es/" target="_blank" rel="external">Подборка стайлгайдов от различных сайтов</a> #frontend #guidelines #styleguide</li>
+</ul>
+]]>
+    
+    </summary>
+    
+      <category term="trible" scheme="http://yurtaev.link/tags/trible/"/>
+    
+      <category term="nodejs" scheme="http://yurtaev.link/tags/nodejs/"/>
+    
+      <category term="distributed" scheme="http://yurtaev.link/tags/distributed/"/>
+    
+      <category term="guidelines" scheme="http://yurtaev.link/tags/guidelines/"/>
+    
+      <category term="video" scheme="http://yurtaev.link/tags/video/"/>
+    
+      <category term="versioncontrol" scheme="http://yurtaev.link/tags/versioncontrol/"/>
+    
+      <category term="angularjs" scheme="http://yurtaev.link/tags/angularjs/"/>
+    
+      <category term="frontend" scheme="http://yurtaev.link/tags/frontend/"/>
+    
+      <category term="tools" scheme="http://yurtaev.link/tags/tools/"/>
+    
+      <category term="guides" scheme="http://yurtaev.link/tags/guides/"/>
+    
+      <category term="best" scheme="http://yurtaev.link/tags/best/"/>
+    
+      <category term="requirements" scheme="http://yurtaev.link/tags/requirements/"/>
+    
+      <category term="couchdb" scheme="http://yurtaev.link/tags/couchdb/"/>
+    
+      <category term="redis" scheme="http://yurtaev.link/tags/redis/"/>
+    
+      <category term="online" scheme="http://yurtaev.link/tags/online/"/>
+    
+      <category term="offline" scheme="http://yurtaev.link/tags/offline/"/>
+    
+      <category term="erlang" scheme="http://yurtaev.link/tags/erlang/"/>
+    
+      <category term="fp" scheme="http://yurtaev.link/tags/fp/"/>
+    
+      <category term="spirograph" scheme="http://yurtaev.link/tags/spirograph/"/>
+    
+      <category term="python" scheme="http://yurtaev.link/tags/python/"/>
+    
+      <category term="javascript" scheme="http://yurtaev.link/tags/javascript/"/>
+    
+      <category term="benchmark" scheme="http://yurtaev.link/tags/benchmark/"/>
+    
+      <category term="slides" scheme="http://yurtaev.link/tags/slides/"/>
+    
+      <category term="replication" scheme="http://yurtaev.link/tags/replication/"/>
+    
+      <category term="oop" scheme="http://yurtaev.link/tags/oop/"/>
+    
+      <category term="elixir" scheme="http://yurtaev.link/tags/elixir/"/>
+    
+      <category term="monitoring" scheme="http://yurtaev.link/tags/monitoring/"/>
+    
+      <category term="security" scheme="http://yurtaev.link/tags/security/"/>
+    
+      <category term="web_framework" scheme="http://yurtaev.link/tags/web-framework/"/>
+    
+      <category term="styleguide" scheme="http://yurtaev.link/tags/styleguide/"/>
+    
+      <category term="profiler" scheme="http://yurtaev.link/tags/profiler/"/>
+    
+      <category term="pipe" scheme="http://yurtaev.link/tags/pipe/"/>
+    
+      <category term="humor" scheme="http://yurtaev.link/tags/humor/"/>
+    
+      <category term="mq" scheme="http://yurtaev.link/tags/mq/"/>
+    
+      <category term="docker" scheme="http://yurtaev.link/tags/docker/"/>
+    
+      <category term="linkstash" scheme="http://yurtaev.link/categories/linkstash/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Linkstash #52]]></title>
