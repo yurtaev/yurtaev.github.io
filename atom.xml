@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yurtaev.link/"/>
-  <updated>2015-01-03T08:48:26.898Z</updated>
+  <updated>2015-01-24T08:39:46.371Z</updated>
   <id>http://yurtaev.link/</id>
   
   <author>
@@ -13,6 +13,99 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Linkstash #3 #4]]></title>
+    <link href="http://yurtaev.link/2015/01/24/Linkstash-4/"/>
+    <id>http://yurtaev.link/2015/01/24/Linkstash-4/</id>
+    <published>2015-01-24T08:35:02.000Z</published>
+    <updated>2015-01-24T08:35:02.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="http://nerves-project.org/gettingstarted.html" target="_blank" rel="external">Erlang для embedded устройств</a> круто, но по моему для этого есть более подходящие языки #erlang #embedded</li>
+<li>PhantomJS 2.0 запланирован на 23 января</li>
+<li><a href="http://codehipsters.com/2015/01/14/indutny-interview.html" target="_blank" rel="external">Фёдор Индутный, io.js и столовые приборы</a> #nodejs</li>
+<li><a href="http://databricks.com/blog/2015/01/15/improved-driver-fault-tolerance-and-zero-data-loss-in-spark-streaming.html" target="_blank" rel="external">Improved Fault-tolerance and Zero Data Loss in Spark Streaming</a> #spark #streaming </li>
+<li><a href="http://aadrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html" target="_blank" rel="external">Command-line tools can be 235x faster than your Hadoop cluster</a> Ну как бы странно использовать hadoop для данных влазящих на одну ноду #tools #Command-line #Hadoop </li>
+<li><a href="http://webcomponents.org/presentations/high-performance-web-components/" target="_blank" rel="external">High Performance Web Components</a> Вместо того что бы делать веб разработку проще, все тянут одеяло на себя и делают только хуже. У меня уже голова плавится от многообразия всего (которое не работает везде на 100%), что будет через 5 лет?! #frontend #web components</li>
+<li><a href="http://dev.by/lenta/main/krasavitsa-sportsmenka-i-prosto-programmist" target="_blank" rel="external">Красавица, спортсменка и просто программист</a> Интервью с разработчиком PyCharm. Цитата из текста:        <blockquote>
+<p>если бы полицейские были, как программисты, то по ночам наряжались бы в бэтменов и боролись с преступностью в своё удовольствие</p>
+</blockquote>
+</li>
+</ul>
+<a id="more"></a>
+
+<ul>
+<li><a href="http://jpetazzo.github.io/2015/01/13/docker-mount-dynamic-volumes/" target="_blank" rel="external">Способ приаттачить сторадж в запущенный контейнер</a> Не знаю зачем, может когда-нибудь пригодится #docker #hint</li>
+<li><a href="http://technolo-g.com/intro-to-docker-swarm-pt1-overview/" target="_blank" rel="external">Серия из 3-х статей про Docker Swarm</a> Выглядит это круто, но пока очень сыро. В общем связка docker swarm + machine + <del>новый тул замены fig с поддержкой кластеров</del> compose выглядит перспективно. #docker #swarm</li>
+<li><a href="http://blog.drewolson.org/blog/2015/01/23/composable-queries-with-ecto/" target="_blank" rel="external">Composable Queries with Ecto</a> С одной стороны мне не очень нравится а-ля activerecord стайл т.к я вообще не понимаю в какой SQL запрос развернется + на сложных примерах красота вся пропадает, но с другой запросы вида:<pre><code>  query = <span class="keyword">from</span> w <span class="keyword">in</span> Weather,
+      <span class="keyword">where</span>: w.prcp &gt; <span class="number">0</span> <span class="keyword">or</span> is_nil(w.prcp),
+      <span class="keyword">select</span>: w
+</code></pre>  впечатляют, хоть на вид это почти повторение SQL запроса. #elixir #ecto</li>
+<li><a href="http://dev.by/lenta/main/intervyu-s-krisom-kasperski-aka-mysch-h" target="_blank" rel="external">Интервью c мыщъх</a> но конечно хотелось бы прочитать, а еще лучше увидеть полный вариант :)</li>
+<li><a href="http://www.reedbeta.com/blog/2015/01/12/data-oriented-hash-table/" target="_blank" rel="external">Data-Oriented Hash Table</a> #hash table</li>
+<li><a href="http://reports.quickleft.com/css" target="_blank" rel="external">Интересный анализ использования css с 8000 сайтов</a> Я так и знал что большинство забивает на префиксы! #css #report</li>
+<li><a href="http://playkey.net/" target="_blank" rel="external">Российская альтернатива сервису OnLive</a></li>
+<li><a href="http://learningelixir.joekain.com/profiling-elixir/" target="_blank" rel="external">Profiling Elixir</a> =&gt; <a href="http://learningelixir.joekain.com/profiling-elixir-2/" target="_blank" rel="external">Часть 2</a> #elixir #profiling</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ul>
+<li><a href="http://nerves-project.org/gettingstarted.html" target="_blank" rel="external">Erlang для embedded устройств</a> круто, но по моему для этого есть более подходящие языки #erlang #embedded</li>
+<li>PhantomJS 2.0 запланирован на 23 января</li>
+<li><a href="http://codehipsters.com/2015/01/14/indutny-interview.html" target="_blank" rel="external">Фёдор Индутный, io.js и столовые приборы</a> #nodejs</li>
+<li><a href="http://databricks.com/blog/2015/01/15/improved-driver-fault-tolerance-and-zero-data-loss-in-spark-streaming.html" target="_blank" rel="external">Improved Fault-tolerance and Zero Data Loss in Spark Streaming</a> #spark #streaming </li>
+<li><a href="http://aadrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html" target="_blank" rel="external">Command-line tools can be 235x faster than your Hadoop cluster</a> Ну как бы странно использовать hadoop для данных влазящих на одну ноду #tools #Command-line #Hadoop </li>
+<li><a href="http://webcomponents.org/presentations/high-performance-web-components/" target="_blank" rel="external">High Performance Web Components</a> Вместо того что бы делать веб разработку проще, все тянут одеяло на себя и делают только хуже. У меня уже голова плавится от многообразия всего (которое не работает везде на 100%), что будет через 5 лет?! #frontend #web components</li>
+<li><a href="http://dev.by/lenta/main/krasavitsa-sportsmenka-i-prosto-programmist" target="_blank" rel="external">Красавица, спортсменка и просто программист</a> Интервью с разработчиком PyCharm. Цитата из текста:        <blockquote>
+<p>если бы полицейские были, как программисты, то по ночам наряжались бы в бэтменов и боролись с преступностью в своё удовольствие</p>
+</blockquote>
+</li>
+</ul>
+]]>
+    
+    </summary>
+    
+      <category term="erlang" scheme="http://yurtaev.link/tags/erlang/"/>
+    
+      <category term="profiling" scheme="http://yurtaev.link/tags/profiling/"/>
+    
+      <category term="hash" scheme="http://yurtaev.link/tags/hash/"/>
+    
+      <category term="embedded" scheme="http://yurtaev.link/tags/embedded/"/>
+    
+      <category term="nodejs" scheme="http://yurtaev.link/tags/nodejs/"/>
+    
+      <category term="hint" scheme="http://yurtaev.link/tags/hint/"/>
+    
+      <category term="hadoop" scheme="http://yurtaev.link/tags/hadoop/"/>
+    
+      <category term="swarm" scheme="http://yurtaev.link/tags/swarm/"/>
+    
+      <category term="command" scheme="http://yurtaev.link/tags/command/"/>
+    
+      <category term="web" scheme="http://yurtaev.link/tags/web/"/>
+    
+      <category term="streaming" scheme="http://yurtaev.link/tags/streaming/"/>
+    
+      <category term="elixir" scheme="http://yurtaev.link/tags/elixir/"/>
+    
+      <category term="report" scheme="http://yurtaev.link/tags/report/"/>
+    
+      <category term="frontend" scheme="http://yurtaev.link/tags/frontend/"/>
+    
+      <category term="spark" scheme="http://yurtaev.link/tags/spark/"/>
+    
+      <category term="ecto" scheme="http://yurtaev.link/tags/ecto/"/>
+    
+      <category term="tools" scheme="http://yurtaev.link/tags/tools/"/>
+    
+      <category term="docker" scheme="http://yurtaev.link/tags/docker/"/>
+    
+      <category term="css" scheme="http://yurtaev.link/tags/css/"/>
+    
+      <category term="linkstash" scheme="http://yurtaev.link/categories/linkstash/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Linkstash #1]]></title>
