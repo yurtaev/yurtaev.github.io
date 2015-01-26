@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Веб-компоненты как Human API к фронтенд библиотекам | @yurtaev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="Egor Yurtaev, Егор Юртаев, python, javascript, django">
+  <meta name="description" content="Смотрю я на вновь оживший тренд по веб-компонентам и на обсуждения вокруг этого, и понимаю что не видать еще лет 5-ть минимум упрощения во фронтенд разработке. А тем временем требования к приложениям">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Веб-компоненты как Human API к фронтенд библиотекам">
+<meta property="og:url" content="http://yurtaev.link/2015/01/27/Web-Components-as-Human-API/">
+<meta property="og:site_name" content="@yurtaev">
+<meta property="og:description" content="Смотрю я на вновь оживший тренд по веб-компонентам и на обсуждения вокруг этого, и понимаю что не видать еще лет 5-ть минимум упрощения во фронтенд разработке. А тем временем требования к приложениям">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Веб-компоненты как Human API к фронтенд библиотекам">
+<meta name="twitter:description" content="Смотрю я на вновь оживший тренд по веб-компонентам и на обсуждения вокруг этого, и понимаю что не видать еще лет 5-ть минимум упрощения во фронтенд разработке. А тем временем требования к приложениям">
+<meta name="twitter:creator" content="@yurtaev">
+<link rel="publisher" href="https://www.google.com/+EgorYurtaev">
+
+  
+    <link rel="alternative" href="/atom.xml" title="@yurtaev" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <!-- <a href="/" id="logo">@yurtaev</a> -->
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Root</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://yurtaev.link"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Web-Components-as-Human-API" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/01/27/Web-Components-as-Human-API/" class="article-date">
+  <time datetime="2015-01-26T19:05:50.000Z" itemprop="datePublished">27 января 2015</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/dev/">dev</a>►<a class="article-category-link" href="/categories/dev/frontend/">frontend</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Веб-компоненты как Human API к фронтенд библиотекам
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Смотрю я на вновь оживший тренд по веб-компонентам и на обсуждения вокруг этого, и понимаю что не видать еще лет 5-ть минимум упрощения во фронтенд разработке. А тем временем требования к приложениям становятся всё сложнее.</p>
+<p>Теперь это не просто html страничка с ajax запросами на нажатия кнопочек, а полноценное развесистое приложение в браузере, с поддержкой WebSockets для двусторонней связи, с обработкой файлов прям из js на стороне клиента, да еще и оффлайн работой.</p>
+<a id="more"></a>
+
+<p>Каждую неделю выходит ~30 различных библиотек со схожим функционалом что и предыдущие 300. Каждый тянет одеяло на себя вместо того что бы объединить усилия и черт возьми наконец-то разгрести этот ад что творится во фронтенде. Мне сложно представить как в это время новенькие вообще могут успешно стартануть в веб разработке при таком количестве разнообразных путей для решения одной и той же задачи.</p>
+<p>И не удивительно что люди уже не способны выбрать нужный инструмент под задачу, потому что искать в океане поделок можно очень долго, и не факт что найденное решение внутри окажется нормальным. Тут конечно еще играет свою роль факт что люди идиоты и когда читаешь наезды типа – «ангуляр плохой потому что тормозит на 2000-ях биндингах», да конечно тормозит! потому что ты идиот! в нормальном приложение не должно быть так. А потом появляется <a href="http://facebook.github.io/flux/" target="_blank" rel="external">FLUX</a> архитектура которая как раз вот для задач когда эти самые 2000 биндингов нужны, но нет! мы будем писать <a href="https://meduza.io/" target="_blank" rel="external">meduza.io</a> на <a href="http://facebook.github.io/react/" target="_blank" rel="external">React</a> для отображения 27 статических новостей на страничке (на самом деле это круто что кто-то может себе позволить так поиграться в продакшене).</p>
+<p>Короче мой посыл вообще не об этом, а о том что даже самые простые библиотеки требуют большого количества телодвижений и знаний. Например вот нужно обычному человеку (он может быть отличным OCaml разработчиком, но ему нафиг не надо знать как писать фронтенд) встроить в свой бложик красивые графики. И что же сейчас для этого надо сделать:</p>
+<ol>
+<li>Добавить все необходимые стили</li>
+<li>Подключить все js зависимости + еще в нужно порядке (нормальных импортов то нет)</li>
+<li>Добавить в документ какой-либо <code>&lt;div id=&quot;my-cool-chart&quot;&gt;&lt;/div&gt;</code> с нужным id</li>
+<li>Написать с десяток строк когда для создания нужного графика с данными</li>
+</ol>
+<p>В самом просто варианте выглядит это примерно так:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"Chart.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">canvas</span> <span class="attribute">id</span>=<span class="value">"myChart"</span> <span class="attribute">width</span>=<span class="value">"400"</span> <span class="attribute">height</span>=<span class="value">"200"</span>&gt;</span><span class="tag">&lt;/<span class="title">canvas</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="keyword">var</span> data = {</div><div class="line">        labels: [<span class="string">'mon'</span>,<span class="string">'tue'</span>,<span class="string">'wed'</span>,<span class="string">'thu'</span>,<span class="string">'fri'</span>,<span class="string">'sat'</span>,<span class="string">'sun'</span>],</div><div class="line">        datasets: [</div><div class="line">            {</div><div class="line">                data: [<span class="number">10</span>,<span class="number">14</span>,<span class="number">20</span>,<span class="number">25</span>,<span class="number">13</span>,<span class="number">9</span>,<span class="number">40</span>]</div><div class="line">            },</div><div class="line">            {</div><div class="line">                data: [<span class="number">40</span>, <span class="number">9</span>, <span class="number">13</span>, <span class="number">25</span>, <span class="number">20</span>, <span class="number">14</span>, <span class="number">10</span>]</div><div class="line">            }</div><div class="line">        ]</div><div class="line">    };</div><div class="line">    <span class="keyword">var</span> ctx = <span class="built_in">document</span>.getElementById(<span class="string">"myChart"</span>).getContext(<span class="string">"2d"</span>);</div><div class="line">    <span class="keyword">var</span> myNewChart = <span class="keyword">new</span> Chart(ctx).Line(data);</div><div class="line"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p>Человек просто хотел добавить графики в свой бложик, а в итоге вынужден программировать на html/css/javascript.</p>
+<p>И тут врываются веб-компоненты, которые совсем не про создание полноценных приложения, а про удобные/универсальные кирпичики из которых можно строить логику, не тратив много сил на то что бы положить кирпич в нужное место, в нужный лунный цикл и без докторской степени по кирпичам 2014 года.</p>
+<p>И так как уже существует миллион готовых библиотек на все случай жизни, ближайшее время веб-компоненты будут из себя представлять мостик между низкоуровневым API для разработчиков и Human API которым без больших усилий сможет воспользоваться несчастный OCaml программист.</p>
+<p>Возвращаясь к примеру с графиками, с веб-компонентами это будет уже выглядеть намного проще:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"import"</span> <span class="attribute">href</span>=<span class="value">"chart-elements.html"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">chart-line</span> </span></div><div class="line">    <span class="attribute">width</span>=<span class="value">"400"</span> <span class="attribute">height</span>=<span class="value">"200"</span></div><div class="line">    <span class="attribute">labels</span>=<span class="value">"['mon','tue','wed','thu','fri','sat','sun']"</span></div><div class="line">    <span class="attribute">values</span>=<span class="value">"[[10,14,20,25,13,9,40], [40, 9, 13, 25, 20, 14, 10]]"</span>&gt;</div><div class="line"><span class="tag">&lt;/<span class="title">chart-line</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<p>Никакого программирования, только необходимые данные <em>(но как и весь фрондент =&gt; всё также уродливо ^_^ )</em></p>
+<p>Коротко:</p>
+<ul>
+<li>Можно добавлять новые примитивы в html и заниматься складыванием кирпичиков, а не программированием каждого отдельного кирпича</li>
+<li>Веб-компоненты это не про написание приложений, а про расширение функционала html. Вместо того что бы подключать библиотеку для создания табов, можно будет использовать <code>&lt;tabs&gt;&lt;/tabs&gt;</code> прямо в вёрстке</li>
+<li>Писать компоненты больно =&gt; templates/decorators/custom elements/shadow DOM (ангуляровцы будут как дома)</li>
+<li>Веб-компоненты это очень, очень сыро и еще сто раз поменяют спецификацию</li>
+<li>Любые попытки сделать универсальное решение сказываются на Human API и уши разухабистого внутреннего API будут выглядеть еще хуже чем 20-ть строк кода на js</li>
+</ul>
+<center>
+    <iframe src="//giphy.com/embed/GYCURAah2BON2" width="480" height="376" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
+</center>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yurtaev.link/2015/01/27/Web-Components-as-Human-API/" data-id="zirnc3dfdxqpre3v" data-title="Веб-компоненты как Human API к фронтенд библиотекам" class="article-share-link">Share</a>
+      
+        <a href="http://yurtaev.link/2015/01/27/Web-Components-as-Human-API/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/frontend/">frontend</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web-components/">web components</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/01/24/Linkstash-4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">←&nbsp;Прошлое</strong>
+      <div class="article-nav-title">Linkstash #3 #4</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/dev/">dev</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/dev/docker/">docker</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/dev/frontend/">frontend</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/linkstash/">linkstash</a><span class="category-list-count">10</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/analysis/" style="font-size: 10.00px;">analysis</a><a href="/tags/angular/" style="font-size: 10.00px;">angular</a><a href="/tags/angularjs/" style="font-size: 17.50px;">angularjs</a><a href="/tags/anti/" style="font-size: 10.00px;">anti</a><a href="/tags/api/" style="font-size: 10.00px;">api</a><a href="/tags/armin/" style="font-size: 10.00px;">armin</a><a href="/tags/automation/" style="font-size: 10.00px;">automation</a><a href="/tags/aws/" style="font-size: 10.00px;">aws</a><a href="/tags/beanstalk/" style="font-size: 10.00px;">beanstalk</a><a href="/tags/bem/" style="font-size: 10.00px;">bem</a><a href="/tags/benchmark/" style="font-size: 12.50px;">benchmark</a><a href="/tags/best/" style="font-size: 12.50px;">best</a><a href="/tags/bigdata/" style="font-size: 10.00px;">bigdata</a><a href="/tags/blabla/" style="font-size: 12.50px;">blabla</a><a href="/tags/blocker/" style="font-size: 10.00px;">blocker</a><a href="/tags/bookmarks/" style="font-size: 10.00px;">bookmarks</a><a href="/tags/browser/" style="font-size: 10.00px;">browser</a><a href="/tags/browserify/" style="font-size: 10.00px;">browserify</a><a href="/tags/cbv/" style="font-size: 10.00px;">cbv</a><a href="/tags/clojure/" style="font-size: 10.00px;">clojure</a><a href="/tags/clojurescript/" style="font-size: 10.00px;">clojurescript</a><a href="/tags/command/" style="font-size: 10.00px;">command</a><a href="/tags/containers/" style="font-size: 10.00px;">containers</a><a href="/tags/couchdb/" style="font-size: 10.00px;">couchdb</a><a href="/tags/cron/" style="font-size: 10.00px;">cron</a><a href="/tags/cryptography/" style="font-size: 10.00px;">cryptography</a><a href="/tags/css/" style="font-size: 17.50px;">css</a><a href="/tags/deploy/" style="font-size: 10.00px;">deploy</a><a href="/tags/deployment/" style="font-size: 10.00px;">deployment</a><a href="/tags/development/" style="font-size: 10.00px;">development</a><a href="/tags/di/" style="font-size: 12.50px;">di</a><a href="/tags/distributed/" style="font-size: 10.00px;">distributed</a><a href="/tags/django/" style="font-size: 17.50px;">django</a><a href="/tags/docker/" style="font-size: 20.00px;">docker</a><a href="/tags/docker-головного-мозга/" style="font-size: 12.50px;">docker головного мозга</a><a href="/tags/docpad/" style="font-size: 10.00px;">docpad</a><a href="/tags/ecto/" style="font-size: 10.00px;">ecto</a><a href="/tags/elixir/" style="font-size: 15.00px;">elixir</a><a href="/tags/else/" style="font-size: 10.00px;">else</a><a href="/tags/embedded/" style="font-size: 10.00px;">embedded</a>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 Egor Yurtaev<br>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Root</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'yurtaev';
+  
+  var disqus_url = 'http://yurtaev.link/2015/01/27/Web-Components-as-Human-API/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" type="text/css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+  </div>
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-57420841-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+  (w[c] = w[c] || []).push(function() {
+    try {
+      w.yaCounter27397448 = new Ya.Metrika({
+        id:27397448,
+        webvisor:true
+      });
+    } catch(e) { }
+  });
+
+  var n = d.getElementsByTagName("script")[0],
+  s = d.createElement("script"),
+  f = function () { n.parentNode.insertBefore(s, n); };
+  s.type = "text/javascript";
+  s.async = true;
+  s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+  if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+  } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="//mc.yandex.ru/watch/27397448" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+
+</body>
+</html>
