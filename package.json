@@ -3,7 +3,6 @@
   "version": "2.8.3",
   "private": true,
   "dependencies": {
-    "hexo-deployer-s3": "git+https://github.com/nt3rp/hexo-deployer-s3.git#f6cb56397ada792cbd484d7d3aff5c2d68526d36",
     "hexo-generator-feed": "^0.2.1",
     "hexo-generator-sitemap": "^0.2.0",
     "hexo-renderer-ejs": "*",

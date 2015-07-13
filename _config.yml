@@ -95,10 +95,6 @@ exclude_generator:
 deploy:
 - type: github
   repo: git@github.com:yurtaev/yurtaev.github.io.git
-- type: s3
-  bucket: yurtaev.link
-  region: eu-west-1
-  concurrency: 50
 
 # Rss
 feed:
