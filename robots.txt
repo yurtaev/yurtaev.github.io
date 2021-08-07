@@ -1,4 +1,9 @@
+# *
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: http://yurtaev.link/sitemap.xml
+# Host
+Host: https://yurtaev.link
+
+# Sitemaps
+Sitemap: https://yurtaev.link/sitemap.xml
