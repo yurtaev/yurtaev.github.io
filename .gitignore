@@ -7,6 +7,15 @@
 /public/robots.txt
 
 
+# yarn v2
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
 # dependencies
 /node_modules
 /.pnp
