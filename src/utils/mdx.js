@@ -8,9 +8,7 @@ import { parseDate } from './'
 export const POSTS_PATH = path.join(process.cwd(), 'data/_posts')
 export const LEGACY_POSTS_PATH = path.join(process.cwd(), 'data/_legacy')
 
-export const getSourceOfFile = (fileName, PATH) => {
-  return fs.readFileSync(path.join(PATH, fileName))
-}
+export const getSourceOfFile = (fileName, PATH) => fs.readFileSync(path.join(PATH, fileName))
 
 export const getAllPosts = (PATH = POSTS_PATH) => {
   return fs

@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page: Post 1`] = `
+<article>
+  <header>
+    <h1>
+      Linkstash #52
+    </h1>
+    <small>
+      &gt; 
+      <time>
+        2014-12-28
+      </time>
+    </small>
+  </header>
+  <ul>
+    
+
+    <li>
+      Глобальная карта ветров. С учетом того что я ~~дочитываю~~ дочитал 
+      <a
+        href="http://goo.gl/QCKHDL"
+      >
+        «На берегу»
+      </a>
+       очень интересно
+      
+
+      <ul>
+        
+
+        <li>
+          <a
+            href="http://earth.nullschool.net/"
+          >
+            http://earth.nullschool.net/
+          </a>
+        </li>
+        
+
+        <li>
+          <a
+            href="https://www.windyty.com/"
+          >
+            https://www.windyty.com/
+          </a>
+        </li>
+        
+
+      </ul>
+      
+
+    </li>
+    
+
+    <li>
+      <a
+        href="http://kelly-mclaughlin.com/blog/2014/12/12/building-an-erlang-project-with-mix/"
+      >
+        Building an Erlang Project With Mix
+      </a>
+       – mix хорош #erlang #elixir #rebar #mix
+    </li>
+    
+
+    <li>
+      <a
+        href="http://cssstats.com/"
+      >
+        Сервис который выдает статистику по css на сайте – количество селекторов, цветов, размеров и т.д
+      </a>
+       #css #tool #statistics #frontend
+    </li>
+    
+
+    <li>
+      <a
+        href="http://www.evanmiller.org/start-ups-and-emotional-debt.html"
+      >
+        Бро Evan Miller прорвало на серию прекрасных статей. Теперь про «Эмоциональный долг»
+      </a>
+       #thinking #Evan
+    </li>
+    
+
+    <li>
+      <a
+        href="http://benanne.github.io/2014/08/05/spotify-cnns.html"
+      >
+        Запоздалая но очень крутая статья о том как spotify строит рекомендации
+      </a>
+      . Spotify это единственный сервис которым я пользуюсь больше полугода и он не скатывается в унылые повторы как пандора или ластфм + подборки плейлистов просто то что мне надо. #spotify #bigdata #analysis #recommendations
+    </li>
+    
+
+    <li>
+      <a
+        href="http://blog.plataformatec.com.br/2014/12/the-pros-and-cons-of-4-deployment-process-techniques/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+PlataformaBlog+%28Plataformatec+Blog%29&utm_content=FeedBurner"
+      >
+        Из бложика plataformatec «The pros and cons of 4 deployment process techniques»
+      </a>
+       #deployment
+    </li>
+    
+
+    <li>
+      <a
+        href="http://www.phoenixframework.org/v0.7.2/docs/overview"
+      >
+        phoenix наконец-то запилил сайт под проект и маленький туториал. Но я всё еще хочу django а не рельсы на elixir :'(
+      </a>
+       #elixir #guides
+    </li>
+    
+
+    <li>
+      <a
+        href="https://github.com/gorhill/uBlock"
+      >
+        Более быстрая и легкая альтернатива для AdBlock, эффект плацебо, но мне на глаз кажется лучше
+      </a>
+       #extension #blocker #fast
+    </li>
+    
+
+    <li>
+      <a
+        href="https://medium.com/@addyosmani/javascript-application-architecture-on-the-road-to-2015-d8125811101b"
+      >
+        Эдди Османи размышляет на тему фронтенда в 2015 г.
+      </a>
+       #frontend #thinking
+    </li>
+    
+
+  </ul>
+</article>
+`;
