@@ -253,15 +253,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-hook/media-query@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@react-hook/media-query@npm:1.1.1"
-  peerDependencies:
-    react: ">=16.8"
-  checksum: c641c3771be0b2413413d6a6da26dc9789e76c9efc8f6e93dcdf8ad68bdf6189d831de8e60726ce5017a5a8e9a62b7d4f05173ed575dcd44a129e8c13634b47e
-  languageName: node
-  linkType: hard
-
 "@rollup/pluginutils@npm:^4.0.0":
   version: 4.1.1
   resolution: "@rollup/pluginutils@npm:4.1.1"
@@ -3874,6 +3865,17 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"next-themes@npm:^0.0.15":
+  version: 0.0.15
+  resolution: "next-themes@npm:0.0.15"
+  peerDependencies:
+    next: "*"
+    react: "*"
+    react-dom: "*"
+  checksum: 492fa22e854a497c385a51bdcbd012f2758cfd1a2502f0b5e2654a445b17a42adc4728ba6f9ffa234776ec1e09cac069ea5b5875369423edd1a6b5536abeff86
+  languageName: node
+  linkType: hard
+
 "next@npm:11.0.1":
   version: 11.0.1
   resolution: "next@npm:11.0.1"
@@ -4957,7 +4959,6 @@ resolve@^2.0.0-next.3:
   version: 0.0.0-use.local
   resolution: "root@workspace:."
   dependencies:
-    "@react-hook/media-query": ^1.1.1
     "@stitches/react": ^0.2.3
     "@types/ramda": ^0.27.44
     "@types/react": 17.0.15
@@ -4969,6 +4970,7 @@ resolve@^2.0.0-next.3:
     mdx-bundler: ^5.2.1
     next: 11.0.1
     next-sitemap: ^1.6.148
+    next-themes: ^0.0.15
     prism-react-renderer: ^1.2.1
     ramda: ^0.27.1
     react: 17.0.2

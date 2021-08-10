@@ -1,18 +1,18 @@
 import Link from 'next/link'
 import * as R from 'ramda'
 
-import { useUserSettings, isAutoTheme, isLightTheme, isDarkTheme } from '@/useUserSettings'
+import { useUserSettings, isSystemTheme, isLightTheme, isDarkTheme } from '@/useUserSettings'
 import type { THEME } from '@/useUserSettings'
 import { styled } from '@/styles'
 
 const getThemeIcon = R.cond<THEME, string>([
-  [isAutoTheme, R.always('🌗')],
+  [isSystemTheme, R.always('🌗')],
   [isLightTheme, R.always('🔆')],
   [isDarkTheme, R.always('🌙')],
 ])
 
 const getThemeTitle = R.cond<THEME, string>([
-  [isAutoTheme, R.always('Auto')],
+  [isSystemTheme, R.always('System theme')],
   [isLightTheme, R.always('Light')],
   [isDarkTheme, R.always('Dark')],
 ])
@@ -33,7 +33,8 @@ export const Navigation = styled('nav', {
 })
 
 export const Nav = () => {
-  const { swithTheme, userTheme } = useUserSettings()
+  const { swithTheme, theme } = useUserSettings()
+
   return (
     <Navigation>
       <Link href="/">Root</Link>
@@ -46,8 +47,8 @@ export const Nav = () => {
         RSS
       </a>
       {' | '}
-      <SwitchThemeButton title={`${getThemeTitle(userTheme)} theme`} onClick={swithTheme} onTouchEnd={swithTheme}>
-        {getThemeIcon(userTheme)}
+      <SwitchThemeButton title={`${getThemeTitle(theme)} theme`} onClick={swithTheme} onTouchEnd={swithTheme}>
+        {getThemeIcon(theme)}
       </SwitchThemeButton>
     </Navigation>
   )

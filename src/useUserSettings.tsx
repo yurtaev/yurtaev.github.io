@@ -1,102 +1,62 @@
-import { useState, useEffect, useCallback, createContext, useContext, useMemo } from 'react'
+import { useCallback, createContext, useContext, useMemo } from 'react'
 import * as R from 'ramda'
 
-import { darkTheme } from '@/styles'
-import { isSSR } from '@/utils'
-
-import { useMediaQuery } from '@react-hook/media-query'
+import { useTheme } from 'next-themes'
 
 export enum THEME {
   DARK = 'dark',
   LIGHT = 'light',
-  AUTO = 'auto',
+  SYSTEM = 'system',
 }
 
-const THEMES = R.values(THEME)
-const isValideTheme = R.includes(R.__, THEMES)
-
-const THEME_KEY = 'theme'
-const DEFAULT_THEME = THEME.DARK
+// UseThemeProps not exported from `next-themes`
+// https://github.com/pacocoursey/next-themes/pull/55
+interface UseThemeProps extends ReturnType<typeof useTheme> {
+  themes: THEME[]
+  theme: THEME
+  systemTheme: THEME.DARK | THEME.LIGHT
+}
 
 export const isDarkTheme = R.equals(THEME.DARK)
 export const isLightTheme = R.equals(THEME.LIGHT)
-export const isAutoTheme = R.equals(THEME.AUTO)
+export const isSystemTheme = R.equals(THEME.SYSTEM)
 
-const getUserTheme = (): THEME => {
-  if (isSSR) return DEFAULT_THEME
-
-  const theme = window.localStorage.getItem(THEME_KEY) || ''
-
-  if (isValideTheme(theme)) {
-    return theme as THEME
-  } else {
-    // remove if invalid
-    removeUserTheme()
-    return THEME.AUTO
-  }
-}
-
-const saveUserTheme = (theme: THEME) => window.localStorage.setItem(THEME_KEY, theme)
-const removeUserTheme = () => window.localStorage.removeItem(THEME_KEY)
+// auto 🌗 => 🌙
+// light 🔆 => auto 🌗
+// dark 🌙 => light 🔆
+export const getNextTheme = R.cond<THEME, THEME>([
+  [isDarkTheme, R.always(THEME.LIGHT)],
+  [isSystemTheme, R.always(THEME.DARK)],
+  [isLightTheme, R.always(THEME.SYSTEM)],
+])
 
 export type UserSettingsContextType = {
   isDark: boolean
   swithTheme: () => void
-  userTheme: THEME
+  theme: THEME
 }
 
 export const UserSettingsContext = createContext<UserSettingsContextType>({
   isDark: true,
-  userTheme: THEME.DARK,
+  theme: THEME.DARK,
   swithTheme: () => {},
 })
 export const useUserSettings = () => useContext(UserSettingsContext)
 
 export const UserSettingsProvider: React.FC = ({ children }) => {
-  const [userTheme, setUserTheme] = useState(getUserTheme())
-  const isDarkPrefersColorSchema = useMediaQuery('(prefers-color-scheme: dark)')
+  const { theme, setTheme, systemTheme } = useTheme() as UseThemeProps
 
   const isDark = R.cond<THEME, boolean>([
-    [isAutoTheme, R.always(isDarkPrefersColorSchema)],
+    [isSystemTheme, R.always(isDarkTheme(systemTheme))],
     [isDarkTheme, R.always(true)],
     [isLightTheme, R.always(false)],
-  ])(userTheme)
+  ])(theme)
 
   const swithTheme = useCallback(() => {
-    setUserTheme((prevUserTheme) => {
-      // auto 🌗 => 🌙
-      // light 🔆 => auto 🌗
-      // dark 🌙 => light 🔆
-      const newUserTheme = R.cond<THEME, THEME>([
-        [isDarkTheme, R.always(THEME.LIGHT)],
-        [isAutoTheme, R.always(THEME.DARK)],
-        [isLightTheme, R.always(THEME.AUTO)],
-      ])(prevUserTheme)
+    setTheme(getNextTheme(theme))
+  }, [theme, setTheme])
 
-      if (isAutoTheme(newUserTheme)) {
-        removeUserTheme()
-      } else {
-        saveUserTheme(newUserTheme)
-      }
-
-      return newUserTheme
-    })
-  }, [])
-
-  /* add or remove class to body to change theme */
-  useEffect(() => {
-    const body = document.querySelector('body')
-
-    if (!body || isSSR) return
-
-    if (isDark) {
-      body.classList.add(darkTheme)
-    } else {
-      body.classList.remove(darkTheme)
-    }
-  }, [isDark, isDarkPrefersColorSchema])
-
-  const value = useMemo(() => ({ isDark, swithTheme, userTheme }), [isDark, swithTheme, userTheme])
+  const value = useMemo(() => ({ isDark, swithTheme, theme }), [isDark, swithTheme, theme])
 
   return <UserSettingsContext.Provider value={value}>{children}</UserSettingsContext.Provider>
 }

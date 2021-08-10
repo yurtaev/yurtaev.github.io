@@ -1,6 +1,6 @@
 import React from "react";
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
-import { getCssString, darkTheme } from '@/styles'
+import { getCssString } from '@/styles'
 
 
 export default class Document extends NextDocument {
@@ -25,7 +25,7 @@ export default class Document extends NextDocument {
           <meta name="twitter:description" content="Записки юного мазохист & Программирование через боль" />
           <meta name="twitter:creator" content="@yurtaev" />
         </Head>
-        <body className={darkTheme}>
+        <body>
           <Main />
           <NextScript />
         </body>
