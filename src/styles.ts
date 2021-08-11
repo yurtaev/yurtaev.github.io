@@ -24,7 +24,7 @@ export const { styled, css, global, keyframes, getCssString, theme } = createCss
     },
     sizes: {
       contentWidth: '70rem',
-    }
+    },
   },
   media: {
     bp1: '(min-width: 480px)',
@@ -97,6 +97,15 @@ export const globalStyles = global({
 
   p: {
     marginY: '$space$4',
+  },
+
+  img: {
+    maxWidth: '100%',
+
+    '&[align="center"]': {
+      display: 'block',
+      margin: '0 auto',
+    },
   },
 
   blockquote: {
