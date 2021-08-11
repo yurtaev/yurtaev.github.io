@@ -917,7 +917,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stitches/react@npm:^0.2.3":
+"@stitches/react@npm:^0.2.4":
   version: 0.2.4
   resolution: "@stitches/react@npm:0.2.4"
   peerDependencies:
@@ -7116,7 +7116,7 @@ resolve@^2.0.0-next.3:
   version: 0.0.0-use.local
   resolution: "root@workspace:."
   dependencies:
-    "@stitches/react": ^0.2.3
+    "@stitches/react": ^0.2.4
     "@types/jest": ^26.0.24
     "@types/ramda": ^0.27.44
     "@types/react": 17.0.15
