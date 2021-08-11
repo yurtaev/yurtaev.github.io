@@ -1,0 +1,31 @@
+{
+  extends: [
+    // ":disableRenovate",
+
+    // "config:base",
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":prImmediately",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":updateNotScheduled",
+    ":automergeDisabled",
+    ":ignoreModulesAndTests",
+    // ":autodetectPinVersions",
+    // ":prHourlyLimit2",
+    // ":prConcurrentLimit20",
+    "group:recommended",
+    "workarounds:all",
+
+    // extra
+    "packages:eslint",
+  ],
+  schedule: ["at any time"],
+  prConcurrentLimit: 0,
+  prHourlyLimit: 0,
+  rangeStrategy: "bump",
+  semanticCommitScope: "deps",
+  updateLockFiles: true,
+  updateInternalDeps: true,
+  postUpdateOptions: ["yarnDedupeHighest"],
+}
