@@ -2871,7 +2871,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.12.18":
+"esbuild@npm:^0.12.19":
   version: 0.12.19
   resolution: "esbuild@npm:0.12.19"
   bin:
@@ -7122,7 +7122,7 @@ resolve@^2.0.0-next.3:
     "@types/react": 17.0.15
     "@types/react-test-renderer": ^17.0.1
     babel-jest: ^27.0.6
-    esbuild: ^0.12.18
+    esbuild: ^0.12.19
     eslint: 7.32.0
     eslint-config-next: 11.0.1
     feed: ^4.2.2
