@@ -58,6 +58,11 @@ export const darkTheme = theme('dark-theme', {
 
 export const globalStyles = global({
   body: {
+    /* Smooth transitions between modes */
+    $$duration: '0.5s',
+    $$timing: 'ease',
+    transition: 'color $$duration $$timing, background-color $$duration $$timing',
+
     backgroundColor: '$bg',
     color: '$text',
     fontSize: '$1',
