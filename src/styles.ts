@@ -107,7 +107,8 @@ export const globalStyles = global({
   img: {
     maxWidth: '100%',
 
-    '&[align="center"]': {
+    // `middle` is workaround for firefox
+    '&[align="center"], &[align="middle"]': {
       display: 'block',
       margin: '0 auto',
     },
