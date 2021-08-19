@@ -459,10 +459,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@corex/deepmerge@npm:^2.6.20":
-  version: 2.6.20
-  resolution: "@corex/deepmerge@npm:2.6.20"
-  checksum: 40f33a87a460f0a04b82d40fd33a9d73105d510bec781b024cdc90d180389a8c628ce57db650e72c0a5215c1c949adb34426b13a838c34647c6ca1d392e805c0
+"@corex/deepmerge@npm:^2.6.34":
+  version: 2.6.34
+  resolution: "@corex/deepmerge@npm:2.6.34"
+  checksum: 73a396a32f7fc5698f7ad29bc1067d8499cb1767f91b315e6ef01abede34f4342a6c5ed264928f888569db6476a85f9a3f6e5a2261ec22a637d647661784b963
   languageName: node
   linkType: hard
 
@@ -6106,18 +6106,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^1.6.157":
-  version: 1.6.157
-  resolution: "next-sitemap@npm:1.6.157"
+"next-sitemap@npm:^1.6.162":
+  version: 1.6.162
+  resolution: "next-sitemap@npm:1.6.162"
   dependencies:
-    "@corex/deepmerge": ^2.6.20
+    "@corex/deepmerge": ^2.6.34
     matcher: ^4.0.0
     minimist: ^1.2.5
   peerDependencies:
     next: "*"
   bin:
     next-sitemap: bin/next-sitemap
-  checksum: 739913de529d91e09a6db7a6ed953f7ff99e67a0c155ea861b7625bf0b774f108e22328d7ef10587a208e5ac707739eaa9ee73896235396f8801aad017383f55
+  checksum: 3c043a5e856c08455d2dd5c9ceb2dde7f6e59a53806e506d0fb903a299da34f6cb99666608b6f86e1f0ba5c6f9ddafb8ea5ee21d451cb1124c7b012eecc9c88f
   languageName: node
   linkType: hard
 
@@ -7390,7 +7390,7 @@ resolve@^2.0.0-next.3:
     jest: ^27.0.6
     mdx-bundler: ^6.0.1
     next: 11.1.0
-    next-sitemap: ^1.6.157
+    next-sitemap: ^1.6.162
     next-themes: ^0.0.15
     prism-react-renderer: ^1.2.1
     ramda: ^0.27.1
