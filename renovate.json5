@@ -28,4 +28,10 @@
   updateLockFiles: true,
   updateInternalDeps: true,
   postUpdateOptions: ["yarnDedupeHighest"],
+  packageRules: [
+    {
+      matchPackagePatterns: ["jest"],
+      groupName: "jest",
+    },
+  ],
 }
