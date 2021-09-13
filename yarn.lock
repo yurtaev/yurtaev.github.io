@@ -2903,12 +2903,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.12.25":
-  version: 0.12.25
-  resolution: "esbuild@npm:0.12.25"
+"esbuild@npm:^0.12.27":
+  version: 0.12.27
+  resolution: "esbuild@npm:0.12.27"
   bin:
     esbuild: bin/esbuild
-  checksum: fd92b0541c17e6d863d3b1cf628a35c9844831a1f1f2d16c3091bc7a130a601a8164083b84a65cd3178209e7c395fc61d454f92c8b1a4869d443fd0ca5a51a8d
+  checksum: b40a7098a51d9d74c50a5912477079ecbd96c211d00cbabde3cb4560609b383265c7bbb0f7e350cfc40ed0e13996be25405d14f560eeaad48105cb7c753e24f8
   languageName: node
   linkType: hard
 
@@ -7416,7 +7416,7 @@ resolve@^2.0.0-next.3:
     "@types/react": 17.0.20
     "@types/react-test-renderer": ^17.0.1
     babel-jest: ^27.1.0
-    esbuild: ^0.12.25
+    esbuild: ^0.12.27
     eslint: 7.32.0
     eslint-config-next: 11.1.2
     feed: ^4.2.2
