@@ -396,12 +396,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.15.3, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.15.3":
+"@babel/runtime@npm:7.15.3":
   version: 7.15.3
   resolution: "@babel/runtime@npm:7.15.3"
   dependencies:
     regenerator-runtime: ^0.13.4
   checksum: 2f0b8d2d4e36035ab1d84af0ec26aafa098536870f27c8e07de0a0e398f7a394fdea68a88165535ffb52ded6a68912bdc3450bdf91f229eb132e1c89470789f5
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.15.4":
+  version: 7.15.4
+  resolution: "@babel/runtime@npm:7.15.4"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: c40825430400e47c19b97e4142d5315d2910305b9714d44a711472587ee2fd4521fdba5f02ddd9df3902f5e988d9854fa83f4da1e0c091f70f6983fa52480606
   languageName: node
   linkType: hard
 
@@ -5707,21 +5716,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mdx-bundler@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "mdx-bundler@npm:6.0.1"
+"mdx-bundler@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "mdx-bundler@npm:6.0.2"
   dependencies:
-    "@babel/runtime": ^7.15.3
+    "@babel/runtime": ^7.15.4
     "@esbuild-plugins/node-resolve": ^0.1.4
     "@fal-works/esbuild-plugin-global-externals": ^2.1.2
     gray-matter: ^4.0.3
     remark-frontmatter: ^4.0.0
     remark-mdx-frontmatter: ^1.0.1
     uuid: ^8.3.2
-    xdm: ^2.0.0
+    xdm: ^2.1.0
   peerDependencies:
-    esbuild: 0.11.x || 0.12.x
-  checksum: 85f0e663a9aa1832b82f4d853567d811b1d4cfad5e8a91a441bd3f61b35ecbf80366c0151bf01fc063259940cfb621bd23998741e0266ce259858604ec1d3622
+    esbuild: 0.11.x || 0.12.x || 0.13.x
+  checksum: 6d2d947a3ad2e5832e12b5491f0c278c6a87bfa621e92973b6e2f210bcbdf364ad59c45b58e22a80964e29edf6afd37316b4e101470072da664823f5fe763660
   languageName: node
   linkType: hard
 
@@ -7584,7 +7593,7 @@ resolve@^2.0.0-next.3:
     feed: ^4.2.2
     gray-matter: ^4.0.3
     jest: ^27.2.3
-    mdx-bundler: ^6.0.1
+    mdx-bundler: ^6.0.2
     next: 11.1.2
     next-sitemap: ^1.6.168
     next-themes: ^0.0.15
@@ -7829,7 +7838,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"source-map@npm:0.7.3, source-map@npm:^0.7.3":
+"source-map@npm:0.7.3, source-map@npm:^0.7.0, source-map@npm:^0.7.3":
   version: 0.7.3
   resolution: "source-map@npm:0.7.3"
   checksum: cd24efb3b8fa69b64bf28e3c1b1a500de77e84260c5b7f2b873f88284df17974157cc88d386ee9b6d081f08fdd8242f3fc05c953685a6ad81aad94c7393dedea
@@ -9073,9 +9082,9 @@ typescript@4.4.3:
   languageName: node
   linkType: hard
 
-"xdm@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "xdm@npm:2.0.0"
+"xdm@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "xdm@npm:2.1.0"
   dependencies:
     "@rollup/pluginutils": ^4.0.0
     "@types/estree-jsx": ^0.0.1
@@ -9093,6 +9102,7 @@ typescript@4.4.3:
     periscopic: ^3.0.0
     remark-parse: ^10.0.0
     remark-rehype: ^9.0.0
+    source-map: ^0.7.0
     unified: ^10.0.0
     unist-util-position-from-estree: ^1.0.0
     unist-util-stringify-position: ^3.0.0
@@ -9101,7 +9111,7 @@ typescript@4.4.3:
   dependenciesMeta:
     deasync:
       optional: true
-  checksum: 8e9f67808b0190044ff2a40aaf298b877559680dba3abe530827f18398015ffc14290ccf2f07d16e70e08312a7ef768329410ca97e63814e174dc08ffef88eab
+  checksum: 5a3f2434a5390aaebc66aa7d1a90d582de29c2256c94e542df7476cd5ffac6c160ebcb4f75a1a0593dfd8c6d0e650e1ad18f023a57262e0b3abc89c3e1f5c86e
   languageName: node
   linkType: hard
 
