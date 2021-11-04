@@ -6286,9 +6286,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:^1.6.184":
-  version: 1.6.184
-  resolution: "next-sitemap@npm:1.6.184"
+"next-sitemap@npm:^1.6.203":
+  version: 1.6.203
+  resolution: "next-sitemap@npm:1.6.203"
   dependencies:
     "@corex/deepmerge": ^2.6.34
     matcher: ^4.0.0
@@ -6297,7 +6297,7 @@ __metadata:
     next: "*"
   bin:
     next-sitemap: bin/next-sitemap
-  checksum: e96445533d472596d9d1804bd039b25ed6f2e5d15f6d67d6d05da3f43cb6ff663c1269c06897a701fc037ed77b4bba196aeab724a4e26ef51ace75d34505e60a
+  checksum: a083a5ab9e6dc6345dcb27207d31a46dd4f84ff3cc7fa673038ed82d9961cbb7481958e35e67f6febff659d4e99749ab3256bab1263917f4e842d82147ab49b4
   languageName: node
   linkType: hard
 
@@ -7583,7 +7583,7 @@ resolve@^2.0.0-next.3:
     jest: ^27.3.1
     mdx-bundler: ^6.0.2
     next: 11.1.2
-    next-sitemap: ^1.6.184
+    next-sitemap: ^1.6.203
     next-themes: ^0.0.15
     prism-react-renderer: ^1.2.1
     ramda: ^0.27.1
