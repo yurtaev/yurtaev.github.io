@@ -8,7 +8,7 @@ import { parseDate } from './'
 export const POSTS_PATH = path.join(process.cwd(), 'data/_posts')
 export const LEGACY_POSTS_PATH = path.join(process.cwd(), 'data/_legacy')
 
-export const getSourceOfFile = (fileName, PATH) => fs.readFileSync(path.join(PATH, fileName))
+export const getSourceOfFile = (fileName, PATH) => fs.readFileSync(path.join(PATH, fileName), { encoding: 'utf-8' })
 
 export const getAllPosts = (PATH = POSTS_PATH) => {
   return fs
@@ -40,9 +40,7 @@ export const getAllLegacyPosts = () => {
 export const getSinglePost = async (slug, PATH = POSTS_PATH) => {
   const source = getSourceOfFile(slug + '.mdx', PATH)
 
-  const { code, frontmatter } = await bundleMDX(source, {
-    cwd: POSTS_PATH,
-  })
+  const { code, frontmatter } = await bundleMDX({ source, cwd: POSTS_PATH })
 
   return {
     meta: { ...frontmatter, date: frontmatter.date.toString() },
