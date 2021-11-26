@@ -1240,12 +1240,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ramda@npm:^0.27.49":
-  version: 0.27.49
-  resolution: "@types/ramda@npm:0.27.49"
+"@types/ramda@npm:^0.27.52":
+  version: 0.27.52
+  resolution: "@types/ramda@npm:0.27.52"
   dependencies:
     ts-toolbelt: ^6.15.1
-  checksum: 6e894debac3295a327e526a1a8aa4545a38c583eb8c96493a2ef4c1cde2e3ce932dfe0f9131cc84837df060c4cbf317789fcd0c5568dfc47bffb735aa1ae2fc4
+  checksum: 67e2df83b8ca5c4c85797cad215e89c18274a1222a9daad3ea5563ccd3cb81a2749898cc2387f3eef16ecaf35936a1fcbc72b25a9205d232763960fa3c900bbe
   languageName: node
   linkType: hard
 
@@ -7494,7 +7494,7 @@ resolve@^2.0.0-next.3:
   dependencies:
     "@stitches/react": ^0.2.5
     "@types/jest": ^27.0.2
-    "@types/ramda": ^0.27.49
+    "@types/ramda": ^0.27.52
     "@types/react": 17.0.35
     "@types/react-test-renderer": ^17.0.1
     babel-jest: ^27.3.1
