@@ -5,13 +5,13 @@ import { useUserSettings, isSystemTheme, isLightTheme, isDarkTheme } from '@/use
 import type { THEME } from '@/useUserSettings'
 import { styled } from '@/styles'
 
-const getThemeIcon = R.cond<THEME, string>([
+const getThemeIcon = R.cond<[THEME], string>([
   [isSystemTheme, R.always('🌗')],
   [isLightTheme, R.always('🔆')],
   [isDarkTheme, R.always('🌙')],
 ])
 
-const getThemeTitle = R.cond<THEME, string>([
+const getThemeTitle = R.cond<[THEME], string>([
   [isSystemTheme, R.always('System theme')],
   [isLightTheme, R.always('Light')],
   [isDarkTheme, R.always('Dark')],
@@ -43,6 +43,7 @@ export const Nav = () => {
       {' – '}
       {/* <Link href="/">Contacts</Link>
       {' – '} */}
+      {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
       <a href="/atom.xml" target="_blank">
         RSS
       </a>
