@@ -24,7 +24,7 @@ export const isSystemTheme = R.equals(THEME.SYSTEM)
 // auto 🌗 => 🌙
 // light 🔆 => auto 🌗
 // dark 🌙 => light 🔆
-export const getNextTheme = R.cond<THEME, THEME>([
+export const getNextTheme = R.cond<[THEME], THEME>([
   [isDarkTheme, R.always(THEME.LIGHT)],
   [isSystemTheme, R.always(THEME.DARK)],
   [isLightTheme, R.always(THEME.SYSTEM)],
@@ -46,7 +46,7 @@ export const useUserSettings = () => useContext(UserSettingsContext)
 export const UserSettingsProvider: React.FC = ({ children }) => {
   const { theme, setTheme, systemTheme } = useTheme() as UseThemeProps
 
-  const isDark = R.cond<THEME, boolean>([
+  const isDark = R.cond<[THEME], boolean>([
     [isSystemTheme, R.always(isDarkTheme(systemTheme))],
     [isDarkTheme, R.always(true)],
     [isLightTheme, R.always(false)],
