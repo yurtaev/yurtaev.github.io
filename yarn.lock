@@ -5688,9 +5688,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mdx-bundler@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "mdx-bundler@npm:8.0.0"
+"mdx-bundler@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "mdx-bundler@npm:8.0.1"
   dependencies:
     "@babel/runtime": ^7.16.3
     "@esbuild-plugins/node-resolve": ^0.1.4
@@ -5701,8 +5701,8 @@ __metadata:
     uuid: ^8.3.2
     xdm: ^3.3.0
   peerDependencies:
-    esbuild: 0.11.x || 0.12.x || 0.13.x
-  checksum: e228d119866acf293fdbee74620bb77714eed606986d9c283d8313a419a9a7b79adaf484f8f9268f9771fbb2fa4cb1271b26cf93ecfe7d4163fc5cc0c7d017b3
+    esbuild: 0.11.x || 0.12.x || 0.13.x || 0.14.x
+  checksum: a5cbe02c8e0d7bc7bc63cfdf76079e6f5b02933c2fa246a21ca5b40fb5ae0ab1c5e97729afbe3b522c19dd5b3226acea045f84be38180ca70110fd99163e6840
   languageName: node
   linkType: hard
 
@@ -7448,7 +7448,7 @@ resolve@^2.0.0-next.3:
     feed: ^4.2.2
     gray-matter: ^4.0.3
     jest: ^27.4.5
-    mdx-bundler: ^8.0.0
+    mdx-bundler: ^8.0.1
     next: 12.0.7
     next-sitemap: ^1.6.203
     next-themes: ^0.0.15
