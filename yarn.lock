@@ -984,12 +984,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stitches/react@npm:^0.2.5":
-  version: 0.2.5
-  resolution: "@stitches/react@npm:0.2.5"
+"@stitches/react@npm:^1.2.8":
+  version: 1.2.8
+  resolution: "@stitches/react@npm:1.2.8"
   peerDependencies:
     react: ">= 16.3.0"
-  checksum: ff66bd3a5bee850f79b01405c74892e63ad83cddeb8ae8408ab46c9749264755ce6cf956ea7e2434804eae9989d0f6521b657025da5ac3740ce8d449c905a8f9
+  checksum: 029795323cdedb5599ec0636526fc233b2cf41fa9c1f4a704b1f7f457c6170053384a7430afed45e25f73e348d7c391cf1379bc079943cd9cad44302234a5244
   languageName: node
   linkType: hard
 
@@ -7422,7 +7422,7 @@ resolve@^2.0.0-next.3:
   version: 0.0.0-use.local
   resolution: "root@workspace:."
   dependencies:
-    "@stitches/react": ^0.2.5
+    "@stitches/react": ^1.2.8
     "@types/jest": ^27.4.0
     "@types/ramda": ^0.28.11
     "@types/react": 17.0.38
