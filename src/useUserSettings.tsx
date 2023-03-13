@@ -3,6 +3,8 @@ import * as R from 'ramda'
 
 import { useTheme } from 'next-themes'
 
+import { isSSR } from '@/utils'
+
 export enum THEME {
   DARK = 'dark',
   LIGHT = 'light',
@@ -43,7 +45,7 @@ export const UserSettingsContext = createContext<UserSettingsContextType>({
 })
 export const useUserSettings = () => useContext(UserSettingsContext)
 
-export const UserSettingsProvider: React.FC = ({ children }) => {
+export const UserSettingsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { theme, setTheme, systemTheme } = useTheme() as UseThemeProps
 
   const isDark = R.cond<[THEME], boolean>([
@@ -56,7 +58,13 @@ export const UserSettingsProvider: React.FC = ({ children }) => {
     setTheme(getNextTheme(theme))
   }, [theme, setTheme])
 
+
   const value = useMemo(() => ({ isDark, swithTheme, theme }), [isDark, swithTheme, theme])
+
+  // workarounf to fix SSR after upgrade to nextjs v13
+  if (isSSR) {
+    return <>{children}</>
+  }
 
   return <UserSettingsContext.Provider value={value}>{children}</UserSettingsContext.Provider>
 }

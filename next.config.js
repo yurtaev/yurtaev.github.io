@@ -1,7 +1,9 @@
+const OFF = false
+
 module.exports = {
   reactStrictMode: true,
   webpack: (config, { dev, isServer }) => {
-    if (!dev && isServer) {
+    if (OFF && !dev && isServer) {
       return {
         ...config,
         entry() {

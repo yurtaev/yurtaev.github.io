@@ -2,12 +2,12 @@ import { THEME, isDarkTheme, isLightTheme, isSystemTheme, getNextTheme } from '.
 
 test('Themes', () => {
   expect(THEME).toMatchInlineSnapshot(`
-    Object {
-      "DARK": "dark",
-      "LIGHT": "light",
-      "SYSTEM": "system",
-    }
-  `)
+{
+  "DARK": "dark",
+  "LIGHT": "light",
+  "SYSTEM": "system",
+}
+`)
 })
 
 test('isDarkTheme', () => {
