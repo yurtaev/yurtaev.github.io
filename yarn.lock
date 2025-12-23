@@ -1746,12 +1746,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ramda@npm:^0.28.25":
-  version: 0.28.25
-  resolution: "@types/ramda@npm:0.28.25"
+"@types/ramda@npm:^0.31.1":
+  version: 0.31.1
+  resolution: "@types/ramda@npm:0.31.1"
   dependencies:
-    ts-toolbelt: "npm:^6.15.1"
-  checksum: 10/507400af2bdb855850dda32ede0eb294077ed4c3f1c4af160541efc6e0579e0f425ff56e121fbdf886696286495d7d422068d0e804d88a4550a3edf324ca4b27
+    types-ramda: "npm:^0.31.0"
+  checksum: 10/a16b41a30f33e1ef521d4d57ce4949887906fae0a333d2845ee34ff39b21eee9a0b8db963338a5e9343ed9b23878fac1c362114bb4366d81abfc66d01e0066c2
   languageName: node
   linkType: hard
 
@@ -7061,10 +7061,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ramda@npm:^0.28.0":
-  version: 0.28.0
-  resolution: "ramda@npm:0.28.0"
-  checksum: 10/1925e1881ece9feacd7eae620036996dcd3fb4973d931200e8594813238169afeaae8cc4377b4cb40978c26a07929f4e7f88cb2776a6c41b2e65f18dfba6530d
+"ramda@npm:^0.32.0":
+  version: 0.32.0
+  resolution: "ramda@npm:0.32.0"
+  checksum: 10/ee03949247ce0cdbb86642c7087adb015552a91e29e21ffe63f1d3e492328144dc3028f7f804f53c028ce753e46e50d0f4ba09c24b394efb98c1e412a5dd046c
   languageName: node
   linkType: hard
 
@@ -7399,7 +7399,7 @@ __metadata:
   dependencies:
     "@stitches/react": "npm:^1.2.8"
     "@types/jest": "npm:^30.0.0"
-    "@types/ramda": "npm:^0.28.25"
+    "@types/ramda": "npm:^0.31.1"
     "@types/react": "npm:19.2.7"
     "@types/react-test-renderer": "npm:^19.1.0"
     esbuild: "npm:^0.27.2"
@@ -7412,7 +7412,7 @@ __metadata:
     next-sitemap: "npm:^4.2.3"
     next-themes: "npm:^0.4.6"
     prism-react-renderer: "npm:^2.4.1"
-    ramda: "npm:^0.28.0"
+    ramda: "npm:^0.32.0"
     react: "npm:19.2.3"
     react-dom: "npm:19.2.3"
     react-test-renderer: "npm:^19.2.3"
@@ -8232,10 +8232,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-toolbelt@npm:^6.15.1":
-  version: 6.15.5
-  resolution: "ts-toolbelt@npm:6.15.5"
-  checksum: 10/1816b11f6a4ca7b11da1e81613dda217535718862c9c7c1d9e5dbeb12abc765b6803dbc0c90ee8a5c1b782bc369e2851913005042921028d16e6ae8bf054b2da
+"ts-toolbelt@npm:^9.6.0":
+  version: 9.6.0
+  resolution: "ts-toolbelt@npm:9.6.0"
+  checksum: 10/2c2dea2631dbd7372a79cccc6d09a377a6ca2f319f767fd239d2e312cd1d9165a90f8c1777a047227bfdcda6aeba3addbadce88fdfc7f43caf4534d385a43c82
   languageName: node
   linkType: hard
 
@@ -8331,6 +8331,15 @@ __metadata:
     possible-typed-array-names: "npm:^1.0.0"
     reflect.getprototypeof: "npm:^1.0.6"
   checksum: 10/d6b2f0e81161682d2726eb92b1dc2b0890890f9930f33f9bcf6fc7272895ce66bc368066d273e6677776de167608adc53fcf81f1be39a146d64b630edbf2081c
+  languageName: node
+  linkType: hard
+
+"types-ramda@npm:^0.31.0":
+  version: 0.31.0
+  resolution: "types-ramda@npm:0.31.0"
+  dependencies:
+    ts-toolbelt: "npm:^9.6.0"
+  checksum: 10/bc1dcd7306da6449418640b4105db0dd682d9bcc50987caafb9fb99bd9a62801522ee59e9de5de6f136b817d01f2d7baa408acaa6ef3991aa28bd197f975fb85
   languageName: node
   linkType: hard
 
