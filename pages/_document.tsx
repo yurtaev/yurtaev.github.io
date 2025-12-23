@@ -1,6 +1,6 @@
 import React from 'react'
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
-import { getCssString } from '@/styles'
+import { getCssText } from '@/styles'
 
 const GA_TRACKING_ID = 'UA-57420841-1'
 
@@ -9,7 +9,7 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
-          <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssString() }} />
+          <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
           <link rel="icon" href="/favicon.png" />
           <link rel="alternative" href="/atom.xml" title="@yurtaev" type="application/atom+xml" />
 

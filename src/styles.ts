@@ -1,6 +1,6 @@
-import { createCss } from '@stitches/react'
+import { createStitches } from '@stitches/react'
 
-export const { styled, css, global, keyframes, getCssString, theme } = createCss({
+export const { styled, css, globalCss, keyframes, getCssText, createTheme } = createStitches({
   theme: {
     colors: {
       bg: '#fbf1c7',
@@ -46,7 +46,7 @@ export const { styled, css, global, keyframes, getCssString, theme } = createCss
 })
 
 // inspired by https://github.com/dnamsons/Kimbie-Dark-Plus
-export const darkTheme = theme('dark-theme', {
+export const darkTheme = createTheme('dark-theme', {
   colors: {
     bg: '#221a0f',
     text: '#d3af86',
@@ -56,7 +56,7 @@ export const darkTheme = theme('dark-theme', {
   },
 })
 
-export const globalStyles = global({
+export const globalStyles = globalCss({
   body: {
     /* Smooth transitions between modes */
     $$duration: '0.5s',

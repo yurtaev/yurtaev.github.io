@@ -40,13 +40,13 @@ export const Nav = () => {
       <Link href="/">Root</Link>
       {' – '}
       <Link href="/">Blog</Link>
-      {' – '}
+      {/* {' – '} */}
       {/* <Link href="/">Contacts</Link>
       {' – '} */}
       {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-      <a href="/atom.xml" target="_blank">
+      {/* <a href="/atom.xml" target="_blank">
         RSS
-      </a>
+      </a> */}
       {' | '}
       <SwitchThemeButton title={`${getThemeTitle(theme)} theme`} onClick={swithTheme} onTouchEnd={swithTheme}>
         {getThemeIcon(theme)}
