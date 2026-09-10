@@ -1764,12 +1764,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:19.2.9":
-  version: 19.2.9
-  resolution: "@types/react@npm:19.2.9"
+"@types/react@npm:*, @types/react@npm:19.3.0":
+  version: 19.3.0
+  resolution: "@types/react@npm:19.3.0"
   dependencies:
     csstype: "npm:^3.2.2"
-  checksum: 10/580a4acf91cb596edfcf280e3d94380bd5bc675fdce257787432cc77ab67440374fd17a1abde869f3bd47ec1705bf2d66e442a9e9e371603f628e34f9d5790a6
+  checksum: 10/2f4589222fd9c512e1ef78e65f334ade8777400add8ec0803fcc3a044761679b7984ba8410a890af24255383c3251a568bb692b60acfa22397ba0a64b2e032bf
   languageName: node
   linkType: hard
 
@@ -7400,7 +7400,7 @@ __metadata:
     "@stitches/react": "npm:^1.2.8"
     "@types/jest": "npm:^30.0.0"
     "@types/ramda": "npm:^0.28.25"
-    "@types/react": "npm:19.2.9"
+    "@types/react": "npm:19.3.0"
     "@types/react-test-renderer": "npm:^19.1.0"
     esbuild: "npm:^0.27.2"
     eslint: "npm:^9.39.2"
