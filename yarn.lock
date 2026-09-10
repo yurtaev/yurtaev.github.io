@@ -7112,10 +7112,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:19.2.4":
-  version: 19.2.4
-  resolution: "react@npm:19.2.4"
-  checksum: 10/18179fe217f67eb2d0bc61cd04e7ad3c282ea09a1dface7eacd71816f62609f4bbf566c447c704335284deb8397b00bca084e0cd60e6f437279a7498e2d0bfe0
+"react@npm:19.3.0":
+  version: 19.3.0
+  resolution: "react@npm:19.3.0"
+  checksum: 10/e98669f09750c41abb1bf020af67cc847e018c91a8c5413d3f40ddd737e3daef6e419bcd1521b113fda73fd667ae82d5f0e9d9e3ff462faeb82059c09e7f04b1
   languageName: node
   linkType: hard
 
@@ -7413,7 +7413,7 @@ __metadata:
     next-themes: "npm:^0.4.6"
     prism-react-renderer: "npm:^2.4.1"
     ramda: "npm:^0.28.0"
-    react: "npm:19.2.4"
+    react: "npm:19.3.0"
     react-dom: "npm:19.2.4"
     react-test-renderer: "npm:^19.2.4"
     typescript: "npm:5.9.3"
